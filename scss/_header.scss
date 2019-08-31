@@ -9,10 +9,11 @@ header {
 
         h1 {
             position: absolute;
-            bottom: 0;
-            height: 100%;
+            bottom: 1em;
+            padding: 1em;
             color: white;
             font-family: $font-headings;
+            font-size: 6em;
         }
     }
 }
