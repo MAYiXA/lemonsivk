@@ -8,7 +8,8 @@ $fw-medium: 600;
 $fw-bold: 700;
 
 // font-size
-$fs-small: 1em;
+$fs-mini: 1em;
+$fs-small: 1.5em;
 $fs-medium: 2em;
 $fs-large: 5.5em;
 
@@ -25,6 +26,6 @@ h2 {
 
 .nav-link {
     font-family: $font-headings;
-    font-size: $fs-medium;
+    font-size: $fs-small;
     font-weight: $fw-medium;
 }
