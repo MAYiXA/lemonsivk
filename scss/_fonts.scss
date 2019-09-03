@@ -1,5 +1,5 @@
 // font-family
-$font-body: '', sans-serif;
+$font-body: 'Josefin Sans', sans-serif;
 $font-headings: 'Prata', serif;
 
 // font-weight
@@ -14,4 +14,14 @@ $large: 5.5em;
 h1 {
     font-family: $font-headings;
     font-size: $large;
+}
+
+h2 {
+    font-family: $font-body;
+    font-size: $medium;
+}
+
+.nav-link {
+    font-family: $font-headings;
+    font-size: $medium;
 }
