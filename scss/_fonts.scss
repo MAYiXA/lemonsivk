@@ -3,25 +3,28 @@ $font-body: 'Josefin Sans', sans-serif;
 $font-headings: 'Prata', serif;
 
 // font-weight
-$normal: 400;
-$bold: 700;
+$fw-normal: 400;
+$fw-medium: 600;
+$fw-bold: 700;
 
 // font-size
-$small: 1em;
-$medium: 2em;
-$large: 5.5em;
+$fs-small: 1em;
+$fs-medium: 2em;
+$fs-large: 5.5em;
 
 h1 {
     font-family: $font-headings;
-    font-size: $large;
+    font-size: $fs-large;
 }
 
 h2 {
     font-family: $font-body;
-    font-size: $medium;
+    font-size: $fs-medium;
+    font-weight: $fw-normal;
 }
 
 .nav-link {
     font-family: $font-headings;
-    font-size: $medium;
+    font-size: $fs-medium;
+    font-weight: $fw-medium;
 }
