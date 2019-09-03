@@ -34,8 +34,7 @@ header {
             bottom: 1em;
             padding: 1em;
             color: white;
-            font-family: $font-headings;
-            font-size: 6em;
+            text-shadow: 1px 1px 20px black;
             &:before {
                 position: absolute;
                 bottom: 0;
