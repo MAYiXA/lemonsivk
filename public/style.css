@@ -56,9 +56,6 @@ header .nav-top ul li .nav-logo {
 header .nav-top ul li a {
   max-width: 10em;
 }
-header .nav-top ul li a .nav-link {
-  margin: 0;
-}
 header .intro {
   position: relative;
   width: 100%;
