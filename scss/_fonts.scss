@@ -12,20 +12,29 @@ $fs-mini: 1em;
 $fs-small: 1.5em;
 $fs-medium: 2em;
 $fs-large: 5.5em;
+$fs-xlarge: 6em;
+$fs-xxlarge: 6.5em;
 
 h1 {
     font-family: $font-headings;
     font-size: $fs-large;
-}
-
-h2 {
-    font-family: $font-body;
-    font-size: $fs-medium;
-    font-weight: $fw-normal;
+    @media #{$break-s} {
+    }
+    @media #{$break-s} {
+    }
+    @media #{$break-s} {
+    }
+    @media #{$break-s} {
+    }
 }
 
 .nav-link {
     font-family: $font-body;
     font-size: $fs-medium;
     font-weight: $fw-medium;
+}
+
+.and-sign {
+    font-size: $fs-medium;
+    font-style: italic;
 }

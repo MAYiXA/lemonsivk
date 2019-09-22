@@ -1,5 +1,9 @@
-// media query
-//$breakpoint: "only screen and (min-width : 426px)";
+// media-breaks
+$break-s: "only screen and (max-width : 375px)";
+$break-m: "only screen and (min-width : 768px)";
+$break-l: "only screen and (min-width : 1024px)";
+$break-xl: "only screen and (min-width : 1440px)";
+$break-xxl: "only screen and (min-width : 2560px)";
 
 // colors
-$color-blue: rgb(62, 27, 219);
+$color-blue: rgb(0, 171, 223);
