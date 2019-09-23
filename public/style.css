@@ -1,15 +1,45 @@
 h1 {
   font-family: "Prata", serif;
-  font-size: 5.5em;
 }
+@media only screen and (max-width : 424px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+@media only screen and (min-width : 1440px) {
+  h1 {
+    font-size: 5.5em;
+  }
+}
+
 .nav-link {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2em;
   font-weight: 600;
+  font-size: 1em;
+}
+@media only screen and (min-width : 1440px) {
+  .nav-link {
+    font-size: 1.5em;
+  }
 }
 
 .and-sign {
-  font-size: 2em;
+  font-size: 200%;
   font-style: italic;
 }
 
@@ -39,18 +69,17 @@ header .nav-top ul {
   align-items: center;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 1.5em 0;
 }
 header .nav-top ul li {
   position: relative;
-  padding: 1.5em 0.5em;
 }
 header .nav-top ul li .nav-logo {
   max-width: 18em;
   height: auto;
 }
 header .nav-top ul li a {
-  color: black;
+  color: #303030;
   max-width: 10em;
   transition: 0.4s all ease;
 }

@@ -8,33 +8,44 @@ $fw-medium: 600;
 $fw-bold: 700;
 
 // font-size
-$fs-mini: 1em;
-$fs-small: 1.5em;
-$fs-medium: 2em;
-$fs-large: 5.5em;
-$fs-xlarge: 6em;
-$fs-xxlarge: 6.5em;
+$fs-xs: 1em;
+$fs-s: 1.5em;
+$fs-m: 2em;
+$fs-xm: 3.5em;
+$fs-l: 5.5em;
+$fs-xl: 6em;
+$fs-xxl: 6.5em;
 
 h1 {
     font-family: $font-headings;
-    font-size: $fs-large;
-    @media #{$break-s} {
+    @media #{$break-xs} {
+        font-size: $fs-s;
     }
     @media #{$break-s} {
+        font-size: $fs-m;
     }
-    @media #{$break-s} {
+    @media #{$break-m} {
+        font-size: $fs-xm;
     }
-    @media #{$break-s} {
+    @media #{$break-l} {
+        font-size: $fs-xm;
+    }
+    @media #{$break-xl} {
+        font-size: $fs-l;
     }
 }
 
 .nav-link {
     font-family: $font-body;
-    font-size: $fs-medium;
     font-weight: $fw-medium;
+    font-size: $fs-xs;
+    @media #{$break-xl} {
+        font-size: $fs-s;
+    }
+
 }
 
 .and-sign {
-    font-size: $fs-medium;
+    font-size: 200%;
     font-style: italic;
 }

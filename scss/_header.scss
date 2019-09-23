@@ -7,16 +7,15 @@ header {
             align-items: center;
             list-style-type: none;
             margin: 0;
-            padding: 0;
+            padding: 1.5em 0;
             li {
                 position: relative;
-                padding: 1.5em .5em;
                 .nav-logo {
                     max-width: 18em;
                     height: auto;
                 }
                 a {
-                    color: black;
+                    color: $color-darkgrey;
                     max-width: 10em;
                     transition: .4s all ease;
                     &:hover {
