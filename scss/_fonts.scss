@@ -16,36 +16,43 @@ $fs-l: 5.5em;
 $fs-xl: 6em;
 $fs-xxl: 6.5em;
 
-h1 {
-    font-family: $font-headings;
-    @media #{$break-xs} {
-        font-size: $fs-s;
+header {
+    h1 {
+        font-family: $font-headings;
+        @media #{$break-xs} {
+            font-size: $fs-s;
+        }
+        @media #{$break-s} {
+            font-size: $fs-m;
+        }
+        @media #{$break-m} {
+            font-size: $fs-xm;
+        }
+        @media #{$break-l} {
+            font-size: $fs-xm;
+        }
+        @media #{$break-xl} {
+            font-size: $fs-l;
+        }
     }
-    @media #{$break-s} {
-        font-size: $fs-m;
+    
+    .nav-link {
+        font-family: $font-body;
+        font-weight: $fw-medium;
+        font-size: $fs-xs;
+        @media #{$break-xl} {
+            font-size: $fs-s;
+        }
     }
-    @media #{$break-m} {
-        font-size: $fs-xm;
-    }
-    @media #{$break-l} {
-        font-size: $fs-xm;
-    }
-    @media #{$break-xl} {
-        font-size: $fs-l;
+    
+    .and-sign {
+        font-size: 200%;
+        font-style: italic;
     }
 }
 
-.nav-link {
-    font-family: $font-body;
-    font-weight: $fw-medium;
-    font-size: $fs-xs;
-    @media #{$break-xl} {
-        font-size: $fs-s;
+#service {
+    i {
+        font-size: $fs-xm;
     }
-
-}
-
-.and-sign {
-    font-size: 200%;
-    font-style: italic;
 }

@@ -1,46 +1,48 @@
-h1 {
+header h1 {
   font-family: "Prata", serif;
 }
 @media only screen and (max-width : 424px) {
-  h1 {
+  header h1 {
     font-size: 1.5em;
   }
 }
 @media only screen and (min-width : 500px) {
-  h1 {
+  header h1 {
     font-size: 2em;
   }
 }
 @media only screen and (min-width : 650px) {
-  h1 {
+  header h1 {
     font-size: 3.5em;
   }
 }
 @media only screen and (min-width : 1024px) {
-  h1 {
+  header h1 {
     font-size: 3.5em;
   }
 }
 @media only screen and (min-width : 1440px) {
-  h1 {
+  header h1 {
     font-size: 5.5em;
   }
 }
-
-.nav-link {
+header .nav-link {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: 1em;
 }
 @media only screen and (min-width : 1440px) {
-  .nav-link {
+  header .nav-link {
     font-size: 1.5em;
   }
 }
-
-.and-sign {
+header .and-sign {
   font-size: 200%;
   font-style: italic;
+}
+
+#service i {
+  font-size: 3.5em;
 }
 
 body {
@@ -118,6 +120,14 @@ header .intro .intro-wrap .h1-1 .h1-2 {
   position: absolute;
   top: 1em;
   left: 3.75em;
+}
+
+#service {
+  display: flex;
+  justify-content: center;
+}
+#service i {
+  color: #303030;
 }
 
 /*# sourceMappingURL=style.css.map */
