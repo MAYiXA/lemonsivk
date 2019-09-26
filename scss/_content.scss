@@ -1,7 +1,31 @@
 #service {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    i {
-        color: $color-darkgrey;
+    flex-flow: row wrap;
+    .grid {
+        margin: 3em;
+        max-width: 10em;
+        i {
+            padding: .3em;
+            color: $color-darkgrey;
+            background-color: $color-blue;
+            border-radius: 50%;
+        }
     }
+}
+
+#work {
+    height: 10em;
+    background-image: linear-gradient(rgb(88, 88, 88), $color-darkgrey);
+    border-radius: 1em 1em 0 0;
+}
+
+#about {
+    background-color: red;
+}
+
+#contact {
+    background-color: yellow;
 }

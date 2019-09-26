@@ -41,8 +41,18 @@ header .and-sign {
   font-style: italic;
 }
 
-#service i {
-  font-size: 3.5em;
+#service .grid {
+  text-align: center;
+}
+#service .grid i {
+  font-size: 5.5em;
+  font-style: normal;
+}
+#service .grid .service-info {
+  font-size: 1.5em;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.3em;
+  font-weight: 600;
 }
 
 body {
@@ -51,9 +61,13 @@ body {
   background-color: white;
 }
 
-.wrapper {
+header {
   margin: 0 7% 0 5%;
   overflow: hidden;
+}
+
+section {
+  padding: 3.5em 0 0 0;
 }
 
 a {
@@ -123,11 +137,35 @@ header .intro .intro-wrap .h1-1 .h1-2 {
 }
 
 #service {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
-#service i {
+#service .grid {
+  margin: 3em;
+  max-width: 10em;
+}
+#service .grid i {
+  padding: 0.3em;
   color: #303030;
+  background-color: #00abdf;
+  border-radius: 50%;
+}
+
+#work {
+  height: 10em;
+  background-image: linear-gradient(#585858, #303030);
+  border-radius: 1em 1em 0 0;
+}
+
+#about {
+  background-color: red;
+}
+
+#contact {
+  background-color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */

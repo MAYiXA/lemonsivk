@@ -52,7 +52,18 @@ header {
 }
 
 #service {
-    i {
-        font-size: $fs-xm;
+    .grid {
+        text-align: center;
+        i {
+            font-size: $fs-l;
+            font-style: normal;
+        }
+        .service-info {
+            font-size: $fs-s;
+            font-family: $font-body;
+            line-height: 1.3em;
+            font-weight: $fw-medium;
+        }
     }
+    
 }
