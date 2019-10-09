@@ -1,5 +1,5 @@
 // font-family
-$font-body: 'Josefin Sans', sans-serif;
+$font-body: 'Open Sans', sans-serif;
 $font-headings: 'Prata', serif;
 
 // font-weight
@@ -55,11 +55,11 @@ header {
     .grid {
         text-align: center;
         i {
-            font-size: $fs-l;
+            font-size: $fs-xm;
             font-style: normal;
         }
         .service-info {
-            font-size: $fs-s;
+            font-size: $fs-xs;
             font-family: $font-body;
             line-height: 1.3em;
             font-weight: $fw-medium;
