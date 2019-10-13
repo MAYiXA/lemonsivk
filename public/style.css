@@ -45,13 +45,13 @@ header .and-sign {
   text-align: center;
 }
 #service .grid i {
-  font-size: 3.5em;
+  font-size: 5.5em;
   font-style: normal;
 }
 #service .grid .service-info {
   font-size: 1em;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.3em;
+  line-height: 1.7em;
   font-weight: 600;
 }
 
@@ -145,14 +145,17 @@ header .intro .intro-wrap .h1-1 .h1-2 {
   flex-flow: row wrap;
 }
 #service .grid {
-  margin: 3em;
-  max-width: 10em;
+  margin: 3.5em;
+  max-width: 13em;
 }
 #service .grid i {
-  padding: 0.3em;
-  color: #303030;
+  padding: 0.5em;
+  color: #002a4d;
   background-color: #00abdf;
   border-radius: 50%;
+}
+#service .grid .service-info {
+  padding-top: 1em;
 }
 
 #jobs {
