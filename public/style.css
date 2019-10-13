@@ -41,6 +41,11 @@ header .and-sign {
   font-style: italic;
 }
 
+section .section-title {
+  font-family: "Prata", serif;
+  font-size: 3.5em;
+}
+
 #service .grid {
   text-align: center;
 }
@@ -53,6 +58,17 @@ header .and-sign {
   font-family: "Open Sans", sans-serif;
   line-height: 1.7em;
   font-weight: 600;
+}
+
+#jobs .text-wrap {
+  font-family: "Open Sans", sans-serif;
+}
+#jobs .text-wrap .job-info {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+#jobs .text-wrap .job-criteria {
+  font-size: 1em;
 }
 
 body {
@@ -106,7 +122,7 @@ header .intro {
   position: relative;
   width: 100%;
   height: 35em;
-  background-image: url("https://images.unsplash.com/photo-1561533115-f893e69758e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80");
+  background-image: url("vatten.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,6 +153,18 @@ header .intro .intro-wrap .h1-1 .h1-2 {
   left: 3.75em;
 }
 
+section {
+  position: relative;
+}
+section .section-title {
+  position: absolute;
+  bottom: -0.8em;
+  left: 0;
+  color: #00abdf;
+  z-index: 99;
+  opacity: 0.4;
+}
+
 #service {
   width: 100%;
   height: auto;
@@ -159,9 +187,29 @@ header .intro .intro-wrap .h1-1 .h1-2 {
 }
 
 #jobs {
-  height: 10em;
-  background-image: linear-gradient(#585858, #303030);
-  border-radius: 1em 1em 0 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  background-image: linear-gradient(to right, #00abdf, #002a4d);
+}
+#jobs .job-img {
+  width: 50%;
+  height: 30em;
+  background-image: url("welders.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+}
+#jobs .text-wrap {
+  align-self: center;
+  color: white;
+  max-width: 40em;
+  margin: 2em;
 }
 
 #about {

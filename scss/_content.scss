@@ -1,3 +1,15 @@
+section {
+    position: relative;
+    .section-title {
+        position: absolute;
+        bottom: -.8em;
+        left: 0;
+        color: $color-blue;
+        z-index: 99;
+        opacity: .4;
+    }
+}
+
 #service {
     width: 100%;
     height: auto;
@@ -20,9 +32,29 @@
 }
 
 #jobs {
-    height: 10em;
-    background-image: linear-gradient(rgb(88, 88, 88), $color-darkgrey);
-    border-radius: 1em 1em 0 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background-image: linear-gradient(to right, $color-blue, $color-marine);
+    .job-img {
+        width: 50%;
+        height: 30em;
+        background-image: url('welders.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(50%);
+    }
+    .text-wrap {
+        align-self: center;
+        color: white;
+        max-width: 40em;
+        margin: 2em;
+    }
 }
 
 #about {
