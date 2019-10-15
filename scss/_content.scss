@@ -45,7 +45,6 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
     background-image: linear-gradient(to right, $color-blue, $color-marine);
     .job-img {
         width: 50%;
@@ -59,9 +58,17 @@ section {
     .text-wrap {
         align-self: center;
         color: white;
-        padding: 1em;
+        padding: 1.5em;
+        margin-right: 2em;
         ul li {
             padding: .5em;
+            .contact-btn {
+                text-decoration: none;
+                color: white;
+                background-color: $color-marine;
+                border-radius: 1em;
+                padding: .5em;
+            }
         }
     }
 }
