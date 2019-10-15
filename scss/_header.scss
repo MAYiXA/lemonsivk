@@ -16,8 +16,7 @@ header {
                 }
                 a {
                     color: $color-darkgrey;
-                    max-width: 10em;
-                    transition: .4s all ease;
+                    transition: .4s ease-in-out;
                     &:hover {
                         color: $color-blue;
                     }
@@ -33,7 +32,8 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        border-radius: 1em;
+        border-radius: 0 3em;
+        margin-bottom: 1.5em;
         .intro-wrap {
             position: relative;
             bottom: -17em;

@@ -54,7 +54,8 @@ header {
 section {
     .section-title {
         font-family: $font-headings;
-        font-size: $fs-xm;
+        font-size: $fs-m;
+        font-weight: $fw-bold;
     }
 }
 
@@ -68,7 +69,6 @@ section {
         .service-info {
             font-size: $fs-xs;
             font-family: $font-body;
-            line-height: 1.7em;
             font-weight: $fw-medium;
         }
     } 
@@ -83,6 +83,7 @@ section {
         }
         .job-criteria {
             font-size: $fs-xs;
+            line-height: 1.8em;
         }
     }
 }
