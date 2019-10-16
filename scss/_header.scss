@@ -14,12 +14,16 @@ header {
                     max-width: 18em;
                     height: auto;
                 }
-                a {
+                .nav-link {
                     color: $color-darkgrey;
                     transition: .4s ease-in-out;
                     &:hover {
                         color: $color-blue;
                     }
+                }
+                .contact-link {
+                    background-color: $color-marine;
+                    padding: .9em 5em;
                 }
             } 
         }

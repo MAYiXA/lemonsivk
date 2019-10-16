@@ -62,14 +62,18 @@ section .section-title {
 
 #jobs .text-wrap {
   font-family: "Open Sans", sans-serif;
+  font-size: 1em;
 }
 #jobs .text-wrap .job-info {
   font-weight: 700;
   font-size: 1.5em;
 }
-#jobs .text-wrap .job-criteria {
-  font-size: 1em;
-  line-height: 1.8em;
+#jobs .text-wrap .contact-btn {
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -111,12 +115,16 @@ header .nav-top ul li .nav-logo {
   max-width: 18em;
   height: auto;
 }
-header .nav-top ul li a {
+header .nav-top ul li .nav-link {
   color: #303030;
   transition: 0.4s ease-in-out;
 }
-header .nav-top ul li a:hover {
+header .nav-top ul li .nav-link:hover {
   color: #00abdf;
+}
+header .nav-top ul li .contact-link {
+  background-color: #002a4d;
+  padding: 0.9em 5em;
 }
 header .intro {
   position: relative;
@@ -213,6 +221,7 @@ section .section-title {
   filter: brightness(50%);
 }
 #jobs .text-wrap {
+  position: relative;
   align-self: center;
   color: white;
   padding: 1.5em;
@@ -221,12 +230,13 @@ section .section-title {
 #jobs .text-wrap ul li {
   padding: 0.5em;
 }
-#jobs .text-wrap ul li .contact-btn {
-  text-decoration: none;
+#jobs .text-wrap .contact-btn {
+  position: absolute;
+  left: 4%;
   color: white;
   background-color: #002a4d;
-  border-radius: 1em;
-  padding: 0.5em;
+  border-radius: 1.5em;
+  padding: 0.9em 5em;
 }
 
 #about {

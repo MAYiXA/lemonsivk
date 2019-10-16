@@ -56,19 +56,23 @@ section {
         filter: brightness(50%);
     }
     .text-wrap {
+        position: relative;
         align-self: center;
         color: white;
         padding: 1.5em;
         margin-right: 2em;
-        ul li {
+        ul {
+            li {
             padding: .5em;
-            .contact-btn {
-                text-decoration: none;
-                color: white;
-                background-color: $color-marine;
-                border-radius: 1em;
-                padding: .5em;
             }
+        }
+        .contact-btn {
+            position: absolute;
+            left: 4%;
+            color: white;
+            background-color: $color-marine;
+            border-radius: 1.5em;
+            padding: .9em 5em;
         }
     }
 }

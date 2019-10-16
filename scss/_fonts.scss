@@ -35,7 +35,7 @@ header {
             font-size: $fs-l;
         }
     }
-    
+
     .nav-link {
         font-family: $font-body;
         font-weight: $fw-medium;
@@ -44,7 +44,7 @@ header {
             font-size: $fs-s;
         }
     }
-    
+
     .and-sign {
         font-size: 200%;
         font-style: italic;
@@ -71,19 +71,19 @@ section {
             font-family: $font-body;
             font-weight: $fw-medium;
         }
-    } 
+    }
 }
 
 #jobs {
     .text-wrap {
         font-family: $font-body;
+        font-size: $fs-xs;
         .job-info {
             font-weight: $fw-bold;
             font-size: $fs-s;
         }
-        .job-criteria {
-            font-size: $fs-xs;
-            line-height: 1.8em;
+        .contact-btn {
+            font-weight: $fw-bold;
         }
     }
 }
