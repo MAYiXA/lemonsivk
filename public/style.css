@@ -29,7 +29,7 @@ header h1 {
 header .nav-link {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 @media only screen and (min-width : 1440px) {
   header .nav-link {
@@ -108,23 +108,20 @@ header .nav-top ul {
   margin: 0;
   padding: 1.5em 0;
 }
-header .nav-top ul li {
-  position: relative;
-}
-header .nav-top ul li .nav-logo {
+header .nav-top ul .nav-logo {
   max-width: 18em;
   height: auto;
 }
-header .nav-top ul li .nav-link {
+header .nav-top ul .nav-item:hover {
+  filter: blur(2px);
+}
+header .nav-top ul .nav-item .nav-link {
   color: #303030;
   transition: 0.4s ease-in-out;
 }
-header .nav-top ul li .nav-link:hover {
+header .nav-top ul .nav-item .nav-link:hover {
   color: #00abdf;
-}
-header .nav-top ul li .contact-link {
-  background-color: #002a4d;
-  padding: 0.9em 5em;
+  filter: blur(0px);
 }
 header .intro {
   position: relative;
@@ -171,10 +168,10 @@ section .section-title {
   left: 0;
   color: white;
   z-index: 99;
-  background-color: #002a4d;
+  background-color: #303030;
   padding: 0.3em 0.3em 0.3em 5%;
   border-top-right-radius: 0.8em;
-  opacity: 0.85;
+  opacity: 0.7;
 }
 
 #service {

@@ -8,24 +8,24 @@ header {
             list-style-type: none;
             margin: 0;
             padding: 1.5em 0;
-            li {
-                position: relative;
-                .nav-logo {
-                    max-width: 18em;
-                    height: auto;
-                }
+            &:hover {
+                filter: blur(2px);
+            }
+            .nav-logo {
+                max-width: 18em;
+                height: auto;
+            }
+            .nav-item {
+                
                 .nav-link {
                     color: $color-darkgrey;
                     transition: .4s ease-in-out;
                     &:hover {
                         color: $color-blue;
+                        filter: blur(0px);
                     }
                 }
-                .contact-link {
-                    background-color: $color-marine;
-                    padding: .9em 5em;
-                }
-            } 
+            }
         }
     }
     .intro {

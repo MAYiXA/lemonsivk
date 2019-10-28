@@ -8,6 +8,7 @@ $fw-medium: 600;
 $fw-bold: 700;
 
 // font-size
+$fs-xxs: .8em;
 $fs-xs: 1em;
 $fs-s: 1.5em;
 $fs-m: 2em;
@@ -39,7 +40,7 @@ header {
     .nav-link {
         font-family: $font-body;
         font-weight: $fw-medium;
-        font-size: $fs-xs;
+        font-size: $fs-xxs;
         @media #{$break-xl} {
             font-size: $fs-s;
         }
