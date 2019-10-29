@@ -27,7 +27,7 @@ header h1 {
   }
 }
 header .nav-link {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 0.8em;
 }
@@ -56,12 +56,12 @@ section .section-title {
 }
 #service .grid .service-info {
   font-size: 1em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
 #jobs .text-wrap {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
 }
 #jobs .text-wrap .job-info {
@@ -108,12 +108,12 @@ header .nav-top ul {
   margin: 0;
   padding: 1.5em 0;
 }
+header .nav-top ul:hover {
+  filter: blur(2px);
+}
 header .nav-top ul .nav-logo {
   max-width: 18em;
   height: auto;
-}
-header .nav-top ul .nav-item:hover {
-  filter: blur(2px);
 }
 header .nav-top ul .nav-item .nav-link {
   color: #303030;
@@ -224,16 +224,19 @@ section .section-title {
   padding: 1.5em;
   margin-right: 2em;
 }
-#jobs .text-wrap ul li {
+#jobs .text-wrap .fa-ul {
+  margin-bottom: 5%;
+}
+#jobs .text-wrap .fa-ul li {
   padding: 0.5em;
 }
 #jobs .text-wrap .contact-btn {
-  position: absolute;
-  left: 4%;
+  position: relative;
+  margin: 5%;
   color: white;
   background-color: #002a4d;
   border-radius: 1.5em;
-  padding: 0.9em 5em;
+  padding: 0.9em 18%;
 }
 
 #about {

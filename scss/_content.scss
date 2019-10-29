@@ -61,18 +61,19 @@ section {
         color: white;
         padding: 1.5em;
         margin-right: 2em;
-        ul {
+        .fa-ul {
+            margin-bottom: 5%;
             li {
             padding: .5em;
             }
         }
         .contact-btn {
-            position: absolute;
-            left: 4%;
+            position: relative;
+            margin: 5%;
             color: white;
             background-color: $color-marine;
             border-radius: 1.5em;
-            padding: .9em 5em;
+            padding: .9em 18%;
         }
     }
 }
