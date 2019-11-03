@@ -57,6 +57,7 @@ section {
         font-family: $font-headings;
         font-size: $fs-m;
         font-weight: $fw-bold;
+        letter-spacing: .15em;
     }
 }
 
@@ -76,15 +77,25 @@ section {
 }
 
 #jobs {
-    .text-wrap {
+    .job-text-wrap {
         font-family: $font-body;
         font-size: $fs-xs;
         .job-info {
             font-weight: $fw-bold;
             font-size: $fs-s;
         }
-        .contact-btn {
-            font-weight: $fw-bold;
-        }
+    }
+    .contact-btn {
+        font-family: $font-body;
+        font-weight: $fw-bold;
+        font-size: $fs-s;
+    }
+}
+
+#about {
+    .about-text {
+        font-family: $font-headings;
+        font-weight: $fw-medium;
+        font-size: $fs-xm;
     }
 }
