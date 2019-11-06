@@ -9,21 +9,16 @@ header {
             list-style-type: none;
             margin: 0;
             padding: 1.5em 0;
-            &:hover {
-                filter: blur(2px);
-            }
             .nav-logo {
-                max-width: 18em;
+                max-width: 15em;
                 height: auto;
             }
             .nav-item {
-                
                 .nav-link {
                     color: $color-darkgrey;
                     transition: .4s ease-in-out;
                     &:hover {
                         color: $color-blue;
-                        filter: blur(0px);
                     }
                 }
             }

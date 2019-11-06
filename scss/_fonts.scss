@@ -99,3 +99,22 @@ section {
         font-size: $fs-xm;
     }
 }
+
+#contact {
+    .contact-form {
+        .label {
+            font-family: $font-body;
+            font-size: $fs-s;
+            font-weight: $fw-bold;
+        }
+        .input-text {
+            font-family: $font-body;
+            font-size: $fs-s;
+        }
+        .submit-btn {
+            font-family: $font-body;
+            font-size: $fs-s;
+            font-weight: $fw-bold;
+        }
+    }
+}
