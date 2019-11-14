@@ -245,6 +245,10 @@ section {
             padding: .8em 3em;
             border-radius: 0 1.5em;
             color: white;
+            transition: all .4s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
     .call-us {
