@@ -141,10 +141,20 @@ header .nav-top ul .nav-logo {
 }
 header .nav-top ul .nav-item .nav-link {
   color: #303030;
-  transition: 0.4s ease-in-out;
+  transition: all 0.5s ease;
+  padding: 0.5em 1em;
 }
 header .nav-top ul .nav-item .nav-link:hover {
-  color: #00abdf;
+  color: white;
+  background-color: #002a4d;
+  padding: 0.5 1.5em;
+  border-radius: 0 1.5em;
+}
+header .nav-top ul .nav-item .nav-link:focus, header .nav-top ul .nav-item .nav-link:active {
+  color: #002a4d;
+  background-color: #00abdf;
+  padding: 0.5 1.5em;
+  border-radius: 0 1.5em;
 }
 header .intro {
   position: relative;
@@ -154,7 +164,7 @@ header .intro {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 0 3em;
+  border-radius: 0 5em;
   margin-bottom: 1.5em;
 }
 header .intro .intro-wrap {
