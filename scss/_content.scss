@@ -116,7 +116,7 @@ section {
             position: absolute;
             display: block;
             list-style: none;
-            background: rgba(6, 133, 252, 0.493);
+            background: rgba(0, 132, 184, 0.39);
             animation: animate 25s linear infinite;
             bottom: -230px;
             &:nth-child(1) {
@@ -201,11 +201,15 @@ section {
 }
 
 #contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     width: 100%;
     height: auto;
     background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.219), $color-darkgrey);
     .contact-form {
-        padding: 10%;
+        width: 100%;
+        padding: 10% 10% 2% 10%;
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
@@ -245,15 +249,48 @@ section {
             padding: .8em 3em;
             border-radius: 0 1.5em;
             color: white;
-            transition: all .4s ease-in-out;
+            transition: all .4s ease;
             &:hover {
                 transform: scale(1.2);
             }
         }
     }
-    .call-us {
-        position: relative;
-        margin: 0 auto;
-        color: white;
+    .google-phone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 0 10%;
+        .call-us {
+            color: white;
+            padding-right: .5em;
+        }
+        .phone {
+            color: white;
+            display: block;
+            margin-block-start: 1.33em;
+            margin-block-end: 1.33em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            transition: all .5s ease;
+            &:hover {
+                color: $color-marine;
+                background-color: white;
+                padding: 0 1em;
+                border-radius: 0 1.5em;
+            }
+        }
+        .fa-phone {
+            padding-left: .5em;
+            color: $color-blue;
+            display: block;
+            margin-block-start: 1.33em;
+            margin-block-end: 1.33em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
     }
+    
 }
