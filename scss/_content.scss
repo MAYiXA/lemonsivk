@@ -91,7 +91,7 @@ section {
     justify-content: center;
     align-items: center;
     .about-text-wrap {
-        background-color: rgba(128, 128, 128, 0.219);
+        background-color: $color-lightgrey;
         width: 80%;
         border-radius: 0 3em;
         border: 10px double $color-blue;
@@ -206,7 +206,7 @@ section {
     justify-content: center;
     width: 100%;
     height: auto;
-    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.219), $color-darkgrey);
+    background-image: linear-gradient(to bottom, $color-lightgrey, $color-darkgrey);
     .contact-form {
         width: 100%;
         padding: 10% 10% 2% 10%;
@@ -265,14 +265,11 @@ section {
             color: white;
             padding-right: .5em;
         }
-        .phone {
+        .bottom-phone {
             color: white;
             display: block;
             margin-block-start: 1.33em;
             margin-block-end: 1.33em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
             transition: all .5s ease;
             &:hover {
                 color: $color-marine;
@@ -285,11 +282,12 @@ section {
             padding-left: .5em;
             color: $color-blue;
             display: block;
-            margin-block-start: 1.33em;
+            margin-block-start: 1em;
             margin-block-end: 1.33em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
+            margin-left: .4em;
+            border: 1px solid white;
+            padding: .3em;
+            border-radius: 50%;
         }
     }
     

@@ -47,7 +47,7 @@ header {
         margin-bottom: 1.5em;
         .intro-wrap {
             position: relative;
-            bottom: -17em;
+            bottom: -25em;
             padding: 2em;
             margin-left: 4em;
             .h1-1 {
@@ -69,5 +69,39 @@ header {
                 }
             }
         } 
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -3em;
+            right: -3em;
+            width: 70vw;
+            height: 40%;
+            background-color: $color-marine;
+            opacity: .7;
+        }
+        .phone-us {
+            position: absolute;
+            right: 1.5em;
+            bottom: 1em;
+            transition: all .4s ease;
+            &:hover {
+                transform: scale(1.2);
+            }
+            .top-phone {
+                color: white;
+                transition: all .4s ease;
+                &:hover {
+                    padding-bottom: .2em;
+                    border-bottom: 1px dashed white;
+                }
+            }
+            .fa-phone {
+                margin-left: .4em;
+                color: $color-blue;
+                border: 1px solid white;
+                padding: .3em;
+                border-radius: 50%;
+            }
+        }
     }
 }

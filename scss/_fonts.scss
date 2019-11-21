@@ -18,6 +18,14 @@ $fs-xl: 6em;
 $fs-xxl: 6.5em;
 
 header {
+    .nav-link {
+        font-family: $font-body;
+        font-weight: $fw-medium;
+        font-size: $fs-xxs;
+        @media #{$break-xl} {
+            font-size: $fs-s;
+        }
+    }
     h1 {
         font-family: $font-headings;
         @media #{$break-xs} {
@@ -36,19 +44,15 @@ header {
             font-size: $fs-l;
         }
     }
-
-    .nav-link {
-        font-family: $font-body;
-        font-weight: $fw-medium;
-        font-size: $fs-xxs;
-        @media #{$break-xl} {
-            font-size: $fs-s;
-        }
-    }
-
     .and-sign {
         font-size: 200%;
         font-style: italic;
+    }
+    .phone-us {
+        font-size: $fs-m;
+        .top-phone {
+            font-family: $font-body;
+        }
     }
 }
 

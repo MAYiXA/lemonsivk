@@ -1,3 +1,13 @@
+header .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+@media only screen and (min-width : 1440px) {
+  header .nav-link {
+    font-size: 1.5em;
+  }
+}
 header h1 {
   font-family: "Prata", serif;
 }
@@ -26,19 +36,15 @@ header h1 {
     font-size: 5.5em;
   }
 }
-header .nav-link {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 0.8em;
-}
-@media only screen and (min-width : 1440px) {
-  header .nav-link {
-    font-size: 1.5em;
-  }
-}
 header .and-sign {
   font-size: 200%;
   font-style: italic;
+}
+header .phone-us {
+  font-size: 2em;
+}
+header .phone-us .top-phone {
+  font-family: "Montserrat", sans-serif;
 }
 
 section .section-title {
@@ -112,7 +118,6 @@ body {
 
 header {
   margin: 0 5% 0 5%;
-  overflow: hidden;
 }
 
 a {
@@ -169,7 +174,7 @@ header .intro {
 }
 header .intro .intro-wrap {
   position: relative;
-  bottom: -17em;
+  bottom: -25em;
   padding: 2em;
   margin-left: 4em;
 }
@@ -190,6 +195,40 @@ header .intro .intro-wrap .h1-1 .h1-2 {
   position: absolute;
   top: 1em;
   left: 3.75em;
+}
+header .intro:before {
+  content: "";
+  position: absolute;
+  bottom: -3em;
+  right: -3em;
+  width: 70vw;
+  height: 40%;
+  background-color: #002a4d;
+  opacity: 0.7;
+}
+header .intro .phone-us {
+  position: absolute;
+  right: 1.5em;
+  bottom: 1em;
+  transition: all 0.4s ease;
+}
+header .intro .phone-us:hover {
+  transform: scale(1.2);
+}
+header .intro .phone-us .top-phone {
+  color: white;
+  transition: all 0.4s ease;
+}
+header .intro .phone-us .top-phone:hover {
+  padding-bottom: 0.2em;
+  border-bottom: 1px dashed white;
+}
+header .intro .phone-us .fa-phone {
+  margin-left: 0.4em;
+  color: #00abdf;
+  border: 1px solid white;
+  padding: 0.3em;
+  border-radius: 50%;
 }
 
 section {
@@ -459,17 +498,14 @@ section .section-title {
   color: white;
   padding-right: 0.5em;
 }
-#contact .google-phone .phone {
+#contact .google-phone .bottom-phone {
   color: white;
   display: block;
   margin-block-start: 1.33em;
   margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
   transition: all 0.5s ease;
 }
-#contact .google-phone .phone:hover {
+#contact .google-phone .bottom-phone:hover {
   color: #002a4d;
   background-color: white;
   padding: 0 1em;
@@ -479,11 +515,12 @@ section .section-title {
   padding-left: 0.5em;
   color: #00abdf;
   display: block;
-  margin-block-start: 1.33em;
+  margin-block-start: 1em;
   margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
+  margin-left: 0.4em;
+  border: 1px solid white;
+  padding: 0.3em;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
