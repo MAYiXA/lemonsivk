@@ -1,0 +1,27 @@
+footer {
+    background-color: $color-darkgrey;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .author {
+        padding: 1em 0 1em;
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+        background-color: $color-marine;
+        border-radius: 4em 4em 0 0;
+        color: white;
+        .author-name {
+            color: white;
+            transition: all .4s ease;
+            &:hover {
+                border-bottom: 1px dashed white;
+                padding-bottom: .4em;
+            }
+            &:focus, 
+            &:active {
+                color: $color-blue;
+            }
+        }
+    }
+}
