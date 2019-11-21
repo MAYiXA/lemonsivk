@@ -199,12 +199,13 @@ header .intro .intro-wrap .h1-1 .h1-2 {
 header .intro:before {
   content: "";
   position: absolute;
-  bottom: -3em;
-  right: -3em;
-  width: 70vw;
-  height: 40%;
+  bottom: 0;
+  right: 0;
+  width: 25em;
+  height: 14%;
   background-color: #002a4d;
-  opacity: 0.75;
+  opacity: 0.8;
+  border-radius: 0 0 0 5em;
 }
 header .intro .phone-us {
   position: absolute;
@@ -213,7 +214,7 @@ header .intro .phone-us {
   transition: all 0.4s ease;
 }
 header .intro .phone-us:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 header .intro .phone-us .top-phone {
   color: white;

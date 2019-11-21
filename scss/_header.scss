@@ -72,12 +72,13 @@ header {
         &:before {
             content: '';
             position: absolute;
-            bottom: -3em;
-            right: -3em;
-            width: 70vw;
-            height: 40%;
+            bottom: 0;
+            right: 0;
+            width: 25em;
+            height: 14%;
             background-color: $color-marine;
-            opacity: .75;
+            opacity: .8;
+            border-radius: 0 0 0 5em;
         }
         .phone-us {
             position: absolute;
@@ -85,7 +86,7 @@ header {
             bottom: 1em;
             transition: all .4s ease;
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.15);
             }
             .top-phone {
                 color: white;
