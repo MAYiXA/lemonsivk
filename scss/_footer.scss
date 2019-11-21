@@ -1,15 +1,15 @@
 footer {
     background-color: $color-darkgrey;
-    width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
     .author {
-        padding: 1em 0 1em;
-        margin: 0 auto;
-        width: 70%;
-        text-align: center;
+        padding: 1em 4em 1em 3em;
+        margin: 0;
+        text-align: right;
         background-color: $color-marine;
-        border-radius: 4em 4em 0 0;
+        border-radius: 2em 0 0 0;
         color: white;
         .author-name {
             color: white;

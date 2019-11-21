@@ -41,7 +41,7 @@ section {
 
 #jobs {
     padding: 0;
-    margin: 0 0 5em;
+    margin: 0;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -102,7 +102,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    padding: 4em 0;
     .about-text-wrap {
         background-color: $color-lightgrey;
         width: 80%;
@@ -123,7 +123,7 @@ section {
         left: 0;
         padding: 0;
         margin: 0;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         li {
             position: absolute;
@@ -131,7 +131,7 @@ section {
             list-style: none;
             background: rgba(0, 132, 184, 0.39);
             animation: animate 25s linear infinite;
-            bottom: -230px;
+            bottom: -200px;
             &:nth-child(1) {
                 left: 25%;
                 width: 80px;
@@ -218,8 +218,8 @@ section {
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
-    height: auto;
-    padding-bottom: 6em;
+    height: 70%;
+    padding-bottom: 1em;
     background-image: linear-gradient(to bottom, $color-lightgrey, $color-darkgrey);
     .contact-form {
         width: 100%;
@@ -278,16 +278,16 @@ section {
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
-        padding: 0 10%;
+        margin: 1em;
         .call-us {
             color: white;
             padding-right: .5em;
+            margin: 0;
         }
         .bottom-phone {
             color: white;
             display: block;
-            margin-block-start: 1.33em;
-            margin-block-end: 1.33em;
+            margin: 0;
             transition: all .5s ease;
             &:hover {
                 color: $color-marine;
@@ -304,9 +304,7 @@ section {
             padding-left: .5em;
             color: $color-blue;
             display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1.33em;
-            margin-left: .4em;
+            margin: 0 .4em;
             border: 1px solid white;
             padding: .3em;
             border-radius: 50%;
