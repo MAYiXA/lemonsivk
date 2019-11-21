@@ -312,6 +312,18 @@ section .section-title {
   border-bottom-left-radius: 2em;
   padding: 0.7em 18% 0.7em 7%;
   letter-spacing: 0.14em;
+  transition: color 0.4s ease;
+}
+#jobs .contact-btn .fa-angle-double-right {
+  padding-right: 0.5em;
+  transition: all 0.4s ease;
+}
+#jobs .contact-btn:hover {
+  color: #00abdf;
+}
+#jobs .contact-btn:hover .fa-angle-double-right {
+  transform: translateX(0.5em);
+  color: white;
 }
 
 #about {
