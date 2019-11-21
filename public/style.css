@@ -204,7 +204,7 @@ header .intro:before {
   width: 70vw;
   height: 40%;
   background-color: #002a4d;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 header .intro .phone-us {
   position: absolute;
