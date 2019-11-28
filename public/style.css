@@ -264,7 +264,7 @@ section .section-title {
   flex-flow: row wrap;
 }
 #service .grid {
-  margin: 3.5em;
+  margin: 5%;
   max-width: 12em;
   transition: 0.4s ease-in-out;
 }
@@ -273,8 +273,8 @@ section .section-title {
 }
 #service .grid i {
   padding: 0.5em;
-  color: #002a4d;
-  background-color: #00abdf;
+  color: #00abdf;
+  background-color: #002a4d;
   border-radius: 50%;
 }
 #service .grid .service-info {

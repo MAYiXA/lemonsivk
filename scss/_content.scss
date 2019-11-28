@@ -21,7 +21,7 @@ section {
     align-items: center;
     flex-flow: row wrap;
     .grid {
-        margin: 3.5em;
+        margin: 5%;
         max-width: 12em;
         transition: .4s ease-in-out;
         &:hover {
@@ -29,8 +29,8 @@ section {
         }
         i {
             padding: .5em;
-            color: $color-marine;
-            background-color: $color-blue;
+            color: $color-blue;
+            background-color: $color-marine;
             border-radius: 50%;
         }
         .service-info {
