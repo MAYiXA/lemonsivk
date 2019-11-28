@@ -484,6 +484,10 @@ section .section-title {
   border-color: white;
   border-radius: 1em;
   color: #002a4d;
+  outline: 0;
+}
+#contact .contact-form .input-text:focus, #contact .contact-form .input-text:active {
+  border-color: #00abdf;
 }
 #contact .contact-form .input-wrap {
   width: 100%;

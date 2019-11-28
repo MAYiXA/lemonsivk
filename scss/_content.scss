@@ -242,6 +242,11 @@ section {
             border-color: white;
             border-radius: 1em;
             color: $color-marine;
+            outline: 0;
+            &:focus, 
+            &:active {
+                border-color: $color-blue;
+            }
         }
         .input-wrap {
             width: 100%;
@@ -310,5 +315,4 @@ section {
             border-radius: 50%;
         }
     }
-    
 }
