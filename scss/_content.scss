@@ -261,20 +261,24 @@ section {
             resize: none;
             width: 100%;
         }
-        .submit-btn {
-            margin: 0 auto;
-            background-color: $color-marine;
-            border: none;
-            padding: .8em 3em;
-            border-radius: 0 1.5em;
-            color: white;
-            transition: all .4s ease;
-            &:hover {
-                transform: scale(1.2);
-            }
-            &:focus, 
-            &:active {
-                color: $color-blue;
+        .submit-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .submit-btn {
+                background-color: $color-marine;
+                border: none;
+                padding: .8em 3em;
+                border-radius: 0 1.5em;
+                color: white;
+                transition: all .4s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
+                &:focus, 
+                &:active {
+                    color: $color-blue;
+                }
             }
         }
     }
