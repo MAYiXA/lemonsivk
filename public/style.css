@@ -502,6 +502,9 @@ section .section-title {
   resize: none;
   width: 100%;
 }
+#contact .contact-form #file {
+  width: 100%;
+}
 #contact .contact-form .submit-wrap {
   width: 100%;
   display: flex;
