@@ -164,7 +164,8 @@
         <form
           class="contact-form"
           method="post"
-          action="https://formspree.io/xpzwllra"
+          action="https://mailthis.to/emma"
+          encType="multipart/form-data"
         >
           <div class="input-wrap">
             <div class="name-wrap">
@@ -185,7 +186,7 @@
                 class="input-text"
                 type="email"
                 placeholder="exempel@email.se"
-                name="reply-to"
+                name="_replyto"
                 required
               />
             </div>
@@ -199,6 +200,19 @@
             name="message"
             required
           ></textarea>
+          <div class="file-wrap">
+            <label class="label" for="file">Bifoga fil</label>
+            <input 
+                type="file"
+                class="input-text"
+                name="file"
+                placeholder="Bifoga ev. fil"
+            />
+          </div>
+          <input type="hidden" name="_subject" value="Email från hemsidan">
+          <input type="hidden" name="_after" value="https://mayixa.github.io/lemonsivk/">
+          <input type="hidden" name="_honeypot" value="">
+          <input type="hidden" name="_confirmation" value="Tack för ditt mail! Vi hör av oss till dig så fort som möjligt.">
           <input
             class="submit-btn"
             type="submit"
