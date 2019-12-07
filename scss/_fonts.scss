@@ -16,6 +16,7 @@ $fs-xm: 3.5em;
 $fs-l: 5.5em;
 $fs-xl: 6em;
 $fs-xxl: 6.5em;
+$fs-xxxl: 8em;
 
 header {
     .nav-link {
@@ -29,19 +30,16 @@ header {
     h1 {
         font-family: $font-headings;
         @media #{$break-xs} {
-            font-size: $fs-s;
-        }
-        @media #{$break-s} {
             font-size: $fs-m;
         }
-        @media #{$break-m} {
-            font-size: $fs-xm;
-        }
-        @media #{$break-l} {
+        @media #{$break-s} {
             font-size: $fs-xm;
         }
         @media #{$break-xl} {
             font-size: $fs-l;
+        }
+        @media #{$break-xxl} {
+            font-size: $fs-xxxl;
         }
     }
     .and-sign {
@@ -49,7 +47,15 @@ header {
         font-style: italic;
     }
     .phone-us {
-        font-size: $fs-m;
+        @media #{$break-xs} {
+            font-size: $fs-s;
+        }
+        @media #{$break-s} {
+            font-size: $fs-m;
+        }
+        @media #{$break-xxl} {
+            font-size: $fs-xm;
+        }
         .top-phone {
             font-family: $font-body;
         }
@@ -59,9 +65,23 @@ header {
 section {
     .section-title {
         font-family: $font-headings;
-        font-size: $fs-m;
         font-weight: $fw-bold;
         letter-spacing: .15em;
+        @media #{$break-xs} {
+            font-size: $fs-s;
+        }
+        @media #{$break-s} {
+            font-size: $fs-m;
+        }
+        @media #{$break-m} {
+            font-size: $fs-s;
+        }
+        @media #{$break-l} {
+            font-size: $fs-m;
+        }
+        @media #{$break-xxl} {
+            font-size: $fs-xm;
+        }
     }
 }
 
@@ -76,6 +96,9 @@ section {
             font-size: $fs-xs;
             font-family: $font-body;
             font-weight: $fw-medium;
+            @media #{$break-xxl} {
+                font-size: $fs-s;
+            }
         }
     }
 }
@@ -84,15 +107,24 @@ section {
     .job-text-wrap {
         font-family: $font-body;
         font-size: $fs-xs;
+        @media #{$break-xxl} {
+            font-size: $fs-s;
+        }
         .job-info {
             font-weight: $fw-bold;
             font-size: $fs-s;
+            @media #{$break-xxl} {
+                font-size: $fs-m;
+            }
         }
     }
     .contact-btn {
         font-family: $font-body;
         font-weight: $fw-bold;
         font-size: $fs-s;
+        @media #{$break-xxl} {
+            font-size: $fs-m;
+        }
     }
 }
 
@@ -100,7 +132,18 @@ section {
     .about-text {
         font-family: $font-headings;
         font-weight: $fw-medium;
-        font-size: $fs-xm;
+        @media #{$break-xs} {
+            font-size: $fs-m;
+        }
+        @media #{$break-s} {
+            font-size: $fs-m;
+        }
+        @media #{$break-xl} {
+            font-size: $fs-xm;
+        }
+        @media #{$break-xxl} {
+            font-size: $fs-xl;
+        }
     }
 }
 
@@ -123,7 +166,18 @@ section {
     }
     .google-phone {
         font-family: $font-headings;
-        font-size: $fs-m;
+        @media #{$break-s} {
+            font-size: $fs-m;
+        }
+        @media #{$break-m} {
+            font-size: $fs-s;
+        }
+        @media #{$break-l} {
+            font-size: $fs-m;
+        }
+        @media #{$break-xxl} {
+            font-size: $fs-xm;
+        }
     }
     
 }
@@ -131,4 +185,5 @@ section {
 footer {
     font-family: $font-body;
     font-weight: $fw-bold;
+    font-size: $fs-xs;
 }

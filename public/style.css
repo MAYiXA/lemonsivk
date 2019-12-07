@@ -11,22 +11,12 @@ header .nav-link {
 header h1 {
   font-family: "Prata", serif;
 }
-@media only screen and (max-width : 424px) {
-  header h1 {
-    font-size: 1.5em;
-  }
-}
-@media only screen and (min-width : 500px) {
+@media only screen and (max-width : 425px) {
   header h1 {
     font-size: 2em;
   }
 }
-@media only screen and (min-width : 650px) {
-  header h1 {
-    font-size: 3.5em;
-  }
-}
-@media only screen and (min-width : 1024px) {
+@media only screen and (min-width : 500px) {
   header h1 {
     font-size: 3.5em;
   }
@@ -36,12 +26,29 @@ header h1 {
     font-size: 5.5em;
   }
 }
+@media only screen and (min-width : 2560px) {
+  header h1 {
+    font-size: 8em;
+  }
+}
 header .and-sign {
   font-size: 200%;
   font-style: italic;
 }
-header .phone-us {
-  font-size: 2em;
+@media only screen and (max-width : 425px) {
+  header .phone-us {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  header .phone-us {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 2560px) {
+  header .phone-us {
+    font-size: 3.5em;
+  }
 }
 header .phone-us .top-phone {
   font-family: "Montserrat", sans-serif;
@@ -49,9 +56,33 @@ header .phone-us .top-phone {
 
 section .section-title {
   font-family: "Prata", serif;
-  font-size: 2em;
   font-weight: 700;
   letter-spacing: 0.15em;
+}
+@media only screen and (max-width : 425px) {
+  section .section-title {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  section .section-title {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  section .section-title {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  section .section-title {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 2560px) {
+  section .section-title {
+    font-size: 3.5em;
+  }
 }
 
 #service .grid {
@@ -66,25 +97,64 @@ section .section-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
+@media only screen and (min-width : 2560px) {
+  #service .grid .service-info {
+    font-size: 1.5em;
+  }
+}
 
 #jobs .job-text-wrap {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
 }
+@media only screen and (min-width : 2560px) {
+  #jobs .job-text-wrap {
+    font-size: 1.5em;
+  }
+}
 #jobs .job-text-wrap .job-info {
   font-weight: 700;
   font-size: 1.5em;
+}
+@media only screen and (min-width : 2560px) {
+  #jobs .job-text-wrap .job-info {
+    font-size: 2em;
+  }
 }
 #jobs .contact-btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
 }
+@media only screen and (min-width : 2560px) {
+  #jobs .contact-btn {
+    font-size: 2em;
+  }
+}
 
 #about .about-text {
   font-family: "Prata", serif;
   font-weight: 600;
-  font-size: 3.5em;
+}
+@media only screen and (max-width : 425px) {
+  #about .about-text {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #about .about-text {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 1440px) {
+  #about .about-text {
+    font-size: 3.5em;
+  }
+}
+@media only screen and (min-width : 2560px) {
+  #about .about-text {
+    font-size: 6em;
+  }
 }
 
 #contact .contact-form .label {
@@ -103,12 +173,32 @@ section .section-title {
 }
 #contact .google-phone {
   font-family: "Prata", serif;
-  font-size: 2em;
+}
+@media only screen and (min-width : 500px) {
+  #contact .google-phone {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #contact .google-phone {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  #contact .google-phone {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 2560px) {
+  #contact .google-phone {
+    font-size: 3.5em;
+  }
 }
 
 footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 1em;
 }
 
 html {
