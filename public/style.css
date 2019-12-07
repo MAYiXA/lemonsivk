@@ -138,10 +138,10 @@ section .section-title {
 }
 @media only screen and (max-width : 425px) {
   #about .about-text {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
-@media only screen and (min-width : 500px) {
+@media only screen and (min-width : 650px) {
   #about .about-text {
     font-size: 2em;
   }

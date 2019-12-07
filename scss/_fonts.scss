@@ -133,9 +133,9 @@ section {
         font-family: $font-headings;
         font-weight: $fw-medium;
         @media #{$break-xs} {
-            font-size: $fs-m;
+            font-size: $fs-s;
         }
-        @media #{$break-s} {
+        @media #{$break-m} {
             font-size: $fs-m;
         }
         @media #{$break-xl} {
