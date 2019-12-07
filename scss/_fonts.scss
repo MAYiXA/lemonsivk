@@ -18,6 +18,12 @@ $fs-xl: 6em;
 $fs-xxl: 6.5em;
 $fs-xxxl: 8em;
 
+.menu-expanded {
+    font-family: $font-body;
+    font-weight: $fw-bold;
+    font-size: $fs-s;
+}
+
 header {
     .nav-link {
         font-family: $font-body;
@@ -26,6 +32,9 @@ header {
         @media #{$break-xl} {
             font-size: $fs-s;
         }
+    }
+    .toggle-bars {
+        font-size: $fs-m;
     }
     h1 {
         font-family: $font-headings;

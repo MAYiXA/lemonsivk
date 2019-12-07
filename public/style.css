@@ -1,3 +1,9 @@
+.menu-expanded {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
 header .nav-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -7,6 +13,9 @@ header .nav-link {
   header .nav-link {
     font-size: 1.5em;
   }
+}
+header .toggle-bars {
+  font-size: 2em;
 }
 header h1 {
   font-family: "Prata", serif;
@@ -209,6 +218,7 @@ body {
   margin: 0;
   width: 100%;
   background-color: white;
+  position: relative;
 }
 
 header {
@@ -227,6 +237,33 @@ footer {
   overflow: hidden;
 }
 
+.menu-expanded {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.952);
+  transition: all 0.4s ease;
+  display: none;
+}
+.menu-expanded ul {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 50% 10%;
+  padding: 0;
+}
+.menu-expanded ul li {
+  padding: 1em;
+}
+.menu-expanded ul li .expand-link {
+  color: white;
+}
+
 header {
   height: 100%;
 }
@@ -243,6 +280,19 @@ header .nav-top ul .nav-logo {
   max-width: 15em;
   height: auto;
 }
+header .nav-top ul .nav-item {
+  display: none;
+}
+@media only screen and (min-width : 650px) {
+  header .nav-top ul .nav-item {
+    display: none;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  header .nav-top ul .nav-item {
+    display: block;
+  }
+}
 header .nav-top ul .nav-item .nav-link {
   color: #303030;
   transition: all 0.5s ease;
@@ -256,6 +306,31 @@ header .nav-top ul .nav-item .nav-link:hover {
 }
 header .nav-top ul .nav-item .nav-link:focus, header .nav-top ul .nav-item .nav-link:active {
   color: #00abdf;
+}
+header .nav-top ul .toggle-menu {
+  z-index: 101;
+}
+header .nav-top ul .toggle-menu .toggle-bars {
+  color: #00abdf;
+  padding: 0.5em;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+@media only screen and (max-width : 425px) {
+  header .nav-top ul .toggle-menu .toggle-bars {
+    display: block;
+  }
+}
+@media only screen and (min-width : 650px) {
+  header .nav-top ul .toggle-menu .toggle-bars {
+    display: block;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  header .nav-top ul .toggle-menu .toggle-bars {
+    display: none;
+  }
 }
 header .intro {
   position: relative;
