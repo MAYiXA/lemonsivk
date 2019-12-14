@@ -20,7 +20,9 @@
             padding: 1em;
             .expand-link {
                 color: white;
-                
+                &:hover {
+                    color: $color-blue;
+                }
             }
         }
         
@@ -83,6 +85,12 @@ header {
                     @media #{$break-l} {
                         display: none;
                     }
+                    // .fa-bars {
+                    //     display: block;
+                    // }
+                    // .fa-times {
+                    //     display: none;
+                    // }
                 }
             }
         }

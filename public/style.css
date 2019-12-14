@@ -263,6 +263,9 @@ footer {
 .menu-expanded ul li .expand-link {
   color: white;
 }
+.menu-expanded ul li .expand-link:hover {
+  color: #00abdf;
+}
 
 header {
   height: 100%;
