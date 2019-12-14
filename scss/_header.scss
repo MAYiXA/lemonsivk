@@ -20,7 +20,10 @@
             padding: 1em;
             .expand-link {
                 color: white;
-                &:hover {
+                transition: all .4s ease;
+                &:hover,
+                &:active,
+                &:focus {
                     color: $color-blue;
                 }
             }

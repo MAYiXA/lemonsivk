@@ -386,8 +386,9 @@ footer {
 }
 .menu-expanded ul li .expand-link {
   color: white;
+  transition: all 0.4s ease;
 }
-.menu-expanded ul li .expand-link:hover {
+.menu-expanded ul li .expand-link:hover, .menu-expanded ul li .expand-link:active, .menu-expanded ul li .expand-link:focus {
   color: #00abdf;
 }
 
