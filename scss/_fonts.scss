@@ -60,7 +60,7 @@ header {
     }
     .phone-us {
         @media #{$break-xs} {
-            font-size: $fs-s;
+            font-size: $fs-m;
         }
         @media #{$break-s} {
             font-size: $fs-m;
@@ -131,7 +131,7 @@ section {
                 font-size: $fs-xs;
             }
             @media #{$break-s} {
-                font-size: $fs-xs;
+                font-size: $fs-s;
             }
             @media #{$break-m} {
                 font-size: $fs-s;

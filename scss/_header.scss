@@ -146,10 +146,18 @@ header {
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 25em;
-            height: 14%;
+            height: 5.5em;
             background-color: $color-marine;
             border-radius: 0 0 0 5em;
+            @media #{$break-xs} {
+                width: 100%;
+            }
+            @media #{$break-s} {
+                width: 100%;
+            }
+            @media #{$break-m} {
+                width: 25em;
+            }
         }
         .phone-us {
             position: absolute;

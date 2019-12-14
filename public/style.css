@@ -51,7 +51,7 @@ header .and-sign {
 }
 @media only screen and (max-width : 425px) {
   header .phone-us {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 @media only screen and (min-width : 500px) {
@@ -141,7 +141,7 @@ section .section-title {
 }
 @media only screen and (min-width : 500px) {
   #jobs .job-text-wrap .job-info {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 @media only screen and (min-width : 650px) {
@@ -529,10 +529,24 @@ header .intro:before {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 25em;
-  height: 14%;
+  height: 5.5em;
   background-color: #002a4d;
   border-radius: 0 0 0 5em;
+}
+@media only screen and (max-width : 425px) {
+  header .intro:before {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 500px) {
+  header .intro:before {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 650px) {
+  header .intro:before {
+    width: 25em;
+  }
 }
 header .intro .phone-us {
   position: absolute;
