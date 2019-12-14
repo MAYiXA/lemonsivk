@@ -73,16 +73,6 @@ section .section-title {
     font-size: 1.5em;
   }
 }
-@media only screen and (min-width : 500px) {
-  section .section-title {
-    font-size: 2em;
-  }
-}
-@media only screen and (min-width : 650px) {
-  section .section-title {
-    font-size: 1.5em;
-  }
-}
 @media only screen and (min-width : 1024px) {
   section .section-title {
     font-size: 2em;
@@ -116,6 +106,21 @@ section .section-title {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
 }
+@media only screen and (max-width : 425px) {
+  #jobs .job-text-wrap {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #jobs .job-text-wrap {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #jobs .job-text-wrap {
+    font-size: 1em;
+  }
+}
 @media only screen and (min-width : 2560px) {
   #jobs .job-text-wrap {
     font-size: 1.5em;
@@ -123,7 +128,21 @@ section .section-title {
 }
 #jobs .job-text-wrap .job-info {
   font-weight: 700;
-  font-size: 1.5em;
+}
+@media only screen and (max-width : 425px) {
+  #jobs .job-text-wrap .job-info {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #jobs .job-text-wrap .job-info {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #jobs .job-text-wrap .job-info {
+    font-size: 1.5em;
+  }
 }
 @media only screen and (min-width : 2560px) {
   #jobs .job-text-wrap .job-info {
@@ -133,7 +152,21 @@ section .section-title {
 #jobs .contact-btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 1.5em;
+}
+@media only screen and (max-width : 425px) {
+  #jobs .contact-btn {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #jobs .contact-btn {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #jobs .contact-btn {
+    font-size: 1.5em;
+  }
 }
 @media only screen and (min-width : 2560px) {
   #jobs .contact-btn {
@@ -150,12 +183,12 @@ section .section-title {
     font-size: 1.5em;
   }
 }
-@media only screen and (min-width : 650px) {
+@media only screen and (min-width : 500px) {
   #about .about-text {
     font-size: 2em;
   }
 }
-@media only screen and (min-width : 1440px) {
+@media only screen and (min-width : 1024px) {
   #about .about-text {
     font-size: 3.5em;
   }
@@ -168,38 +201,109 @@ section .section-title {
 
 #contact .contact-form .label {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
   font-weight: 700;
+}
+@media only screen and (max-width : 425px) {
+  #contact .contact-form .label {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #contact .contact-form .label {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #contact .contact-form .label {
+    font-size: 1.5em;
+  }
 }
 #contact .contact-form .input-text {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
+}
+@media only screen and (max-width : 425px) {
+  #contact .contact-form .input-text {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #contact .contact-form .input-text {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #contact .contact-form .input-text {
+    font-size: 1.5em;
+  }
 }
 #contact .contact-form .submit-btn {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
   font-weight: 700;
+}
+@media only screen and (max-width : 425px) {
+  #contact .contact-form .submit-btn {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #contact .contact-form .submit-btn {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #contact .contact-form .submit-btn {
+    font-size: 1.5em;
+  }
 }
 #contact .google-phone {
   font-family: "Prata", serif;
 }
+@media only screen and (max-width : 425px) {
+  #contact .google-phone .call-us {
+    font-size: 1em;
+  }
+}
 @media only screen and (min-width : 500px) {
-  #contact .google-phone {
-    font-size: 2em;
+  #contact .google-phone .call-us {
+    font-size: 1em;
   }
 }
 @media only screen and (min-width : 650px) {
-  #contact .google-phone {
+  #contact .google-phone .call-us {
     font-size: 1.5em;
   }
 }
 @media only screen and (min-width : 1024px) {
-  #contact .google-phone {
+  #contact .google-phone .call-us {
     font-size: 2em;
   }
 }
 @media only screen and (min-width : 2560px) {
-  #contact .google-phone {
+  #contact .google-phone .call-us {
+    font-size: 3.5em;
+  }
+}
+@media only screen and (max-width : 425px) {
+  #contact .google-phone .bottom-phone,
+#contact .google-phone .fa-phone {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #contact .google-phone .bottom-phone,
+#contact .google-phone .fa-phone {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  #contact .google-phone .bottom-phone,
+#contact .google-phone .fa-phone {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 2560px) {
+  #contact .google-phone .bottom-phone,
+#contact .google-phone .fa-phone {
     font-size: 3.5em;
   }
 }
@@ -207,11 +311,26 @@ section .section-title {
 footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 1em;
+}
+@media only screen and (max-width : 425px) {
+  footer {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  footer {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  footer {
+    font-size: 1em;
+  }
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -706,6 +825,7 @@ section .section-title {
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
   flex-flow: row wrap;
   margin: 1em;
 }
@@ -713,6 +833,21 @@ section .section-title {
   color: white;
   padding-right: 0.5em;
   margin: 0;
+}
+@media only screen and (max-width : 425px) {
+  #contact .google-phone .call-us {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #contact .google-phone .call-us {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  #contact .google-phone .call-us {
+    width: auto;
+  }
 }
 #contact .google-phone .bottom-phone {
   color: white;

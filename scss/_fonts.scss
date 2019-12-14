@@ -79,12 +79,6 @@ section {
         @media #{$break-xs} {
             font-size: $fs-s;
         }
-        @media #{$break-s} {
-            font-size: $fs-m;
-        }
-        @media #{$break-m} {
-            font-size: $fs-s;
-        }
         @media #{$break-l} {
             font-size: $fs-m;
         }
@@ -116,12 +110,29 @@ section {
     .job-text-wrap {
         font-family: $font-body;
         font-size: $fs-xs;
+        @media #{$break-xs} {
+            font-size: $fs-xxs;
+        }
+        @media #{$break-s} {
+            font-size: $fs-xxs;
+        }
+        @media #{$break-m} {
+            font-size: $fs-xs;
+        }
         @media #{$break-xxl} {
             font-size: $fs-s;
         }
         .job-info {
             font-weight: $fw-bold;
-            font-size: $fs-s;
+            @media #{$break-xs} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-s} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-m} {
+                font-size: $fs-s;
+            }
             @media #{$break-xxl} {
                 font-size: $fs-m;
             }
@@ -130,7 +141,15 @@ section {
     .contact-btn {
         font-family: $font-body;
         font-weight: $fw-bold;
-        font-size: $fs-s;
+        @media #{$break-xs} {
+            font-size: $fs-xs;
+        }
+        @media #{$break-s} {
+            font-size: $fs-xs;
+        }
+        @media #{$break-m} {
+            font-size: $fs-s;
+        }
         @media #{$break-xxl} {
             font-size: $fs-m;
         }
@@ -144,10 +163,10 @@ section {
         @media #{$break-xs} {
             font-size: $fs-s;
         }
-        @media #{$break-m} {
+        @media #{$break-s} {
             font-size: $fs-m;
         }
-        @media #{$break-xl} {
+        @media #{$break-l} {
             font-size: $fs-xm;
         }
         @media #{$break-xxl} {
@@ -160,32 +179,76 @@ section {
     .contact-form {
         .label {
             font-family: $font-body;
-            font-size: $fs-s;
             font-weight: $fw-bold;
+            @media #{$break-xs} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-s} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-m} {
+                font-size: $fs-s;
+            }
         }
         .input-text {
             font-family: $font-body;
-            font-size: $fs-s;
+            @media #{$break-xs} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-s} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-m} {
+                font-size: $fs-s;
+            }
         }
         .submit-btn {
             font-family: $font-body;
-            font-size: $fs-s;
             font-weight: $fw-bold;
+            @media #{$break-xs} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-s} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-m} {
+                font-size: $fs-s;
+            }
         }
     }
     .google-phone {
         font-family: $font-headings;
-        @media #{$break-s} {
-            font-size: $fs-m;
+        .call-us {
+            @media #{$break-xs} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-s} {
+                font-size: $fs-xs;
+            }
+            @media #{$break-m} {
+                font-size: $fs-s;
+            }
+            @media #{$break-l} {
+                font-size: $fs-m;
+            }
+            @media #{$break-xxl} {
+                font-size: $fs-xm;
+            }
         }
-        @media #{$break-m} {
-            font-size: $fs-s;
-        }
-        @media #{$break-l} {
-            font-size: $fs-m;
-        }
-        @media #{$break-xxl} {
-            font-size: $fs-xm;
+        .bottom-phone,
+        .fa-phone {
+            @media #{$break-xs} {
+                font-size: $fs-m;
+            }
+            @media #{$break-s} {
+                font-size: $fs-m;
+            }
+            @media #{$break-l} {
+                font-size: $fs-m;
+            }
+            @media #{$break-xxl} {
+                font-size: $fs-xm;
+            }
         }
     }
     
@@ -194,5 +257,13 @@ section {
 footer {
     font-family: $font-body;
     font-weight: $fw-bold;
-    font-size: $fs-xs;
+    @media #{$break-xs} {
+        font-size: $fs-xxs;
+    }
+    @media #{$break-s} {
+        font-size: $fs-xxs;
+    }
+    @media #{$break-m} {
+        font-size: $fs-xs;
+    }
 }

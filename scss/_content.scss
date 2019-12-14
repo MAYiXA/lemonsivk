@@ -289,12 +289,23 @@ section {
         width: 100%;
         display: flex;
         justify-content: center;
+        text-align: center;
         flex-flow: row wrap;
         margin: 1em;
         .call-us {
             color: white;
             padding-right: .5em;
             margin: 0;
+            @media #{$break-xs} {
+                width: 100%;
+            }
+            @media #{$break-s} {
+                width: 100%;
+            }
+            @media #{$break-l} {
+                width: auto;
+            }
+            
         }
         .bottom-phone {
             color: white;
