@@ -108,8 +108,20 @@ header {
         .intro-wrap {
             position: relative;
             bottom: -50%;
-            padding: 2em;
-            margin-left: 4em;
+            margin-left: 1em;
+            @media #{$break-xs} {
+                padding: .5em;
+            }
+            @media #{$break-s} {
+                padding: .5em;
+            }
+            @media #{$break-m} {
+                padding: 1em;
+            }
+            @media #{$break-l} {
+                padding: 2em;
+                margin-left: 4em;
+            }
             .h1-1 {
                 position: relative;
                 margin: 0;
