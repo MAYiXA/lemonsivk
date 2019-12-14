@@ -394,14 +394,14 @@ header .intro .phone-us {
   transition: all 0.4s ease;
 }
 header .intro .phone-us:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 header .intro .phone-us .top-phone {
   color: white;
   transition: all 0.4s ease;
 }
 header .intro .phone-us .top-phone:hover {
-  padding-bottom: 0.2em;
+  padding-bottom: 0.18em;
   border-bottom: 1px dashed white;
 }
 header .intro .phone-us .top-phone:focus, header .intro .phone-us .top-phone:active {

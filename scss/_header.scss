@@ -143,13 +143,13 @@ header {
             bottom: .7em;
             transition: all .4s ease;
             &:hover {
-                transform: scale(1.15);
+                transform: scale(1.1);
             }
             .top-phone {
                 color: white;
                 transition: all .4s ease;
                 &:hover {
-                    padding-bottom: .2em;
+                    padding-bottom: .18em;
                     border-bottom: 1px dashed white;
                 }
                 &:focus, 
