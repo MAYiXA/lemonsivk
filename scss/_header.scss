@@ -158,6 +158,10 @@ header {
             @media #{$break-m} {
                 width: 25em;
             }
+            @media #{$break-xxl} {
+                height: 9em;
+                width: 40em;
+            }
         }
         .phone-us {
             position: absolute;

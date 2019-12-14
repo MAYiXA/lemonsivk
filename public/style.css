@@ -548,6 +548,12 @@ header .intro:before {
     width: 25em;
   }
 }
+@media only screen and (min-width : 2560px) {
+  header .intro:before {
+    height: 9em;
+    width: 40em;
+  }
+}
 header .intro .phone-us {
   position: absolute;
   right: 1.5em;
