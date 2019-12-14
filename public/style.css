@@ -462,23 +462,13 @@ header .nav-top ul .toggle-menu .toggle-bars {
 header .intro {
   position: relative;
   width: 100%;
-  height: 45em;
+  height: 85vh;
   background-image: url("vatten.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 0 5em;
   margin-bottom: 1.5em;
-}
-@media only screen and (min-width : 650px) {
-  header .intro {
-    height: 39em;
-  }
-}
-@media only screen and (min-width : 1024px) {
-  header .intro {
-    height: 80vh;
-  }
 }
 header .intro .intro-wrap {
   position: relative;

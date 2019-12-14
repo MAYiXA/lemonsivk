@@ -92,19 +92,13 @@ header {
     .intro {
         position: relative;
         width: 100%;
-        height: 45em;
+        height: 85vh;
         background-image: url('vatten.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 0 5em;
         margin-bottom: 1.5em;
-        @media #{$break-m} {
-            height: 39em;
-        }
-        @media #{$break-l} {
-            height: 80vh;
-        }
         .intro-wrap {
             position: relative;
             bottom: -50%;
