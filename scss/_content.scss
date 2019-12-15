@@ -243,6 +243,9 @@ section {
             padding: 18% 10% 2% 10%;
         }
         @media #{$break-s} {
+            padding: 15% 10% 2% 10%;
+        }
+        @media #{$break-m} {
             padding: 10% 10% 2% 10%;
         }
         .label {
