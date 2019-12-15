@@ -96,6 +96,26 @@ section .section-title {
   font-size: 5.5em;
   font-style: normal;
 }
+@media only screen and (max-width : 425px) {
+  #service .grid i {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #service .grid i {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #service .grid i {
+    font-size: 3.5em;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  #service .grid i {
+    font-size: 5.5em;
+  }
+}
 #service .grid .service-info {
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
@@ -597,12 +617,33 @@ section .section-title {
   flex-flow: row wrap;
 }
 #service .grid {
-  margin: 5%;
-  max-width: 12em;
   transition: 0.4s ease-in-out;
 }
-#service .grid:hover {
-  transform: scale(1.4);
+@media only screen and (max-width : 425px) {
+  #service .grid {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #service .grid {
+    width: 100%;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  #service .grid {
+    max-width: 12em;
+    margin: 5%;
+  }
+}
+@media only screen and (min-width : 2560px) {
+  #service .grid {
+    max-width: 15em;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  #service .grid:hover {
+    transform: scale(1.4);
+  }
 }
 #service .grid i {
   padding: 0.5em;
@@ -612,6 +653,21 @@ section .section-title {
 }
 #service .grid .service-info {
   padding-top: 1em;
+}
+@media only screen and (max-width : 425px) {
+  #service .grid .service-info {
+    margin: 0 12%;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #service .grid .service-info {
+    margin: 0 25%;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  #service .grid .service-info {
+    margin: 0;
+  }
 }
 
 #jobs {

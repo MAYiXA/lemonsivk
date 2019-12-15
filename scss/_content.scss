@@ -21,11 +21,24 @@ section {
     align-items: center;
     flex-flow: row wrap;
     .grid {
-        margin: 5%;
-        max-width: 12em;
         transition: .4s ease-in-out;
+        @media #{$break-xs} {
+            width: 100%;
+        }
+        @media #{$break-s} {
+            width: 100%;
+        }
+        @media #{$break-l} {
+            max-width: 12em;
+            margin: 5%;
+        }
+        @media #{$break-xxl} {
+            max-width: 15em;
+        }
         &:hover {
-            transform: scale(1.4);
+            @media #{$break-l} {
+                transform: scale(1.4);
+            }
         }
         i {
             padding: .5em;
@@ -35,6 +48,15 @@ section {
         }
         .service-info {
             padding-top: 1em;
+            @media #{$break-xs} {
+                margin: 0 12%;
+            }
+            @media #{$break-s} {
+                margin: 0 25%;
+            }
+            @media #{$break-l} {
+                margin: 0;
+            }
         }
     }
 }

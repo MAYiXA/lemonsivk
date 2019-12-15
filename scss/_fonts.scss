@@ -97,6 +97,18 @@ section {
         i {
             font-size: $fs-l;
             font-style: normal;
+            @media #{$break-xs} {
+                font-size: $fs-s;
+            }
+            @media #{$break-s} {
+                font-size: $fs-m;
+            }
+            @media #{$break-m} {
+                font-size: $fs-xm;
+            }
+            @media #{$break-l} {
+                font-size: $fs-l;
+            }
         }
         .service-info {
             font-size: $fs-xs;
