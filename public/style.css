@@ -7,11 +7,20 @@
 header .nav-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 0.8em;
+}
+@media only screen and (min-width : 1024px) {
+  header .nav-link {
+    font-size: 1em;
+  }
 }
 @media only screen and (min-width : 1440px) {
   header .nav-link {
     font-size: 1.5em;
+  }
+}
+@media only screen and (min-width : 2560px) {
+  header .nav-link {
+    font-size: 2em;
   }
 }
 header .toggle-bars {
@@ -22,12 +31,12 @@ header h1 {
 }
 @media only screen and (max-width : 425px) {
   header h1 {
-    font-size: 2.5em;
+    font-size: 1.7em;
   }
 }
 @media only screen and (min-width : 500px) {
   header h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
   }
 }
 @media only screen and (min-width : 650px) {
@@ -51,10 +60,15 @@ header .and-sign {
 }
 @media only screen and (max-width : 425px) {
   header .phone-us {
-    font-size: 2em;
+    font-size: 1.3em;
   }
 }
 @media only screen and (min-width : 500px) {
+  header .phone-us {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width : 650px) {
   header .phone-us {
     font-size: 2em;
   }
@@ -75,40 +89,41 @@ section .section-title {
 }
 @media only screen and (max-width : 425px) {
   section .section-title {
-    font-size: 1.5em;
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  section .section-title {
+    font-size: 1em;
   }
 }
 @media only screen and (min-width : 1024px) {
   section .section-title {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 @media only screen and (min-width : 2560px) {
   section .section-title {
-    font-size: 3.5em;
+    font-size: 2em;
   }
 }
 
 #service .grid {
   text-align: center;
 }
-#service .grid i {
-  font-size: 5.5em;
-  font-style: normal;
-}
 @media only screen and (max-width : 425px) {
   #service .grid i {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 }
 @media only screen and (min-width : 500px) {
   #service .grid i {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 @media only screen and (min-width : 650px) {
   #service .grid i {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 }
 @media only screen and (min-width : 1024px) {
@@ -117,9 +132,18 @@ section .section-title {
   }
 }
 #service .grid .service-info {
-  font-size: 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+}
+@media only screen and (max-width : 425px) {
+  #service .grid .service-info {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #service .grid .service-info {
+    font-size: 1em;
+  }
 }
 @media only screen and (min-width : 2560px) {
   #service .grid .service-info {
@@ -129,7 +153,6 @@ section .section-title {
 
 #jobs .job-text-wrap {
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
 }
 @media only screen and (max-width : 425px) {
   #jobs .job-text-wrap {
@@ -137,11 +160,6 @@ section .section-title {
   }
 }
 @media only screen and (min-width : 500px) {
-  #jobs .job-text-wrap {
-    font-size: 0.8em;
-  }
-}
-@media only screen and (min-width : 650px) {
   #jobs .job-text-wrap {
     font-size: 1em;
   }
@@ -156,15 +174,10 @@ section .section-title {
 }
 @media only screen and (max-width : 425px) {
   #jobs .job-text-wrap .job-info {
-    font-size: 1em;
-  }
-}
-@media only screen and (min-width : 500px) {
-  #jobs .job-text-wrap .job-info {
     font-size: 1.5em;
   }
 }
-@media only screen and (min-width : 650px) {
+@media only screen and (min-width : 500px) {
   #jobs .job-text-wrap .job-info {
     font-size: 1.5em;
   }
@@ -311,16 +324,16 @@ section .section-title {
 @media only screen and (max-width : 425px) {
   #contact .google-phone .bottom-phone,
 #contact .google-phone .fa-phone {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 @media only screen and (min-width : 500px) {
   #contact .google-phone .bottom-phone,
 #contact .google-phone .fa-phone {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
-@media only screen and (min-width : 1024px) {
+@media only screen and (min-width : 650px) {
   #contact .google-phone .bottom-phone,
 #contact .google-phone .fa-phone {
     font-size: 2em;
@@ -708,7 +721,6 @@ section .section-title {
   background-color: #002a4d;
   border-bottom-left-radius: 2em;
   padding: 0.7em 18% 0.7em 7%;
-  letter-spacing: 0.14em;
   transition: color 0.4s ease;
 }
 #jobs .contact-btn .fa-angle-double-right {

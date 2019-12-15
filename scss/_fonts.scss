@@ -28,9 +28,14 @@ header {
     .nav-link {
         font-family: $font-body;
         font-weight: $fw-medium;
-        font-size: $fs-xxs;
+        @media #{$break-l} {
+            font-size: $fs-xs;
+        }
         @media #{$break-xl} {
             font-size: $fs-s;
+        }
+        @media #{$break-xxl} {
+            font-size: $fs-m;
         }
     }
     .toggle-bars {
@@ -39,10 +44,10 @@ header {
     h1 {
         font-family: $font-headings;
         @media #{$break-xs} {
-            font-size: 2.5em;
+            font-size: 1.7em;
         }
         @media #{$break-s} {
-            font-size: 2.5em;
+            font-size: 2.4em;
         }
         @media #{$break-m} {
             font-size: $fs-xm;
@@ -60,9 +65,12 @@ header {
     }
     .phone-us {
         @media #{$break-xs} {
-            font-size: $fs-m;
+            font-size: 1.3em;
         }
         @media #{$break-s} {
+            font-size: $fs-s;
+        }
+        @media #{$break-m} {
             font-size: $fs-m;
         }
         @media #{$break-xxl} {
@@ -80,13 +88,16 @@ section {
         font-weight: $fw-bold;
         letter-spacing: .15em;
         @media #{$break-xs} {
-            font-size: $fs-s;
+            font-size: $fs-xs;
+        }
+        @media #{$break-s} {
+            font-size: $fs-xs;
         }
         @media #{$break-l} {
-            font-size: $fs-m;
+            font-size: $fs-s;
         }
         @media #{$break-xxl} {
-            font-size: $fs-xm;
+            font-size: $fs-m;
         }
     }
 }
@@ -95,25 +106,28 @@ section {
     .grid {
         text-align: center;
         i {
-            font-size: $fs-l;
-            font-style: normal;
             @media #{$break-xs} {
-                font-size: $fs-s;
+                font-size: 2.5em;
             }
             @media #{$break-s} {
-                font-size: $fs-m;
+                font-size: 3em;
             }
             @media #{$break-m} {
-                font-size: $fs-xm;
+                font-size: 3em;
             }
             @media #{$break-l} {
                 font-size: $fs-l;
             }
         }
         .service-info {
-            font-size: $fs-xs;
             font-family: $font-body;
             font-weight: $fw-medium;
+            @media #{$break-xs} {
+                font-size: $fs-xxs;
+            }
+            @media #{$break-s} {
+                font-size: $fs-xs;
+            }
             @media #{$break-xxl} {
                 font-size: $fs-s;
             }
@@ -124,14 +138,10 @@ section {
 #jobs {
     .job-text-wrap {
         font-family: $font-body;
-        font-size: $fs-xs;
         @media #{$break-xs} {
             font-size: $fs-xxs;
         }
         @media #{$break-s} {
-            font-size: $fs-xxs;
-        }
-        @media #{$break-m} {
             font-size: $fs-xs;
         }
         @media #{$break-xxl} {
@@ -140,12 +150,9 @@ section {
         .job-info {
             font-weight: $fw-bold;
             @media #{$break-xs} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-s} {
                 font-size: $fs-s;
             }
-            @media #{$break-m} {
+            @media #{$break-s} {
                 font-size: $fs-s;
             }
             @media #{$break-xxl} {
@@ -253,12 +260,12 @@ section {
         .bottom-phone,
         .fa-phone {
             @media #{$break-xs} {
-                font-size: $fs-m;
+                font-size: $fs-s;
             }
             @media #{$break-s} {
-                font-size: $fs-m;
+                font-size: $fs-s;
             }
-            @media #{$break-l} {
+            @media #{$break-m} {
                 font-size: $fs-m;
             }
             @media #{$break-xxl} {
