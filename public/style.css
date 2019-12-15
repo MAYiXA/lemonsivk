@@ -470,11 +470,39 @@ header .nav-top ul {
   align-items: center;
   list-style-type: none;
   margin: 0;
-  padding: 1.5em 0;
+}
+@media only screen and (max-width : 425px) {
+  header .nav-top ul {
+    padding: 0.5em 0;
+  }
+}
+@media only screen and (min-width : 426px) {
+  header .nav-top ul {
+    padding: 0.5em 0;
+  }
+}
+@media only screen and (min-width : 650px) {
+  header .nav-top ul {
+    padding: 1.5em 0;
+  }
 }
 header .nav-top ul .nav-logo {
-  max-width: 15em;
   height: auto;
+}
+@media only screen and (max-width : 425px) {
+  header .nav-top ul .nav-logo {
+    max-width: 11em;
+  }
+}
+@media only screen and (min-width : 426px) {
+  header .nav-top ul .nav-logo {
+    max-width: 12em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  header .nav-top ul .nav-logo {
+    max-width: 15em;
+  }
 }
 header .nav-top ul .nav-item {
   display: none;

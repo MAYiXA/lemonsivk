@@ -39,10 +39,26 @@ header {
             align-items: center;
             list-style-type: none;
             margin: 0;
-            padding: 1.5em 0;
+            @media #{$break-xs} {
+                padding: .5em 0;
+            }
+            @media #{$break-s} {
+                padding: .5em 0;
+            }
+            @media #{$break-m} {
+                padding: 1.5em 0;
+            }
             .nav-logo {
-                max-width: 15em;
                 height: auto;
+                @media #{$break-xs} {
+                    max-width: 11em;
+                }
+                @media #{$break-s} {
+                    max-width: 12em;
+                }
+                @media #{$break-m} {
+                    max-width: 15em;
+                }
             }
             .nav-item {
                 display: none;
