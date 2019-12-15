@@ -110,10 +110,10 @@ section {
                 font-size: 2.5em;
             }
             @media #{$break-s} {
-                font-size: 3em;
+                font-size: $fs-m;
             }
             @media #{$break-m} {
-                font-size: 3em;
+                font-size: $fs-xm;
             }
             @media #{$break-l} {
                 font-size: $fs-l;
@@ -126,6 +126,9 @@ section {
                 font-size: $fs-xxs;
             }
             @media #{$break-s} {
+                font-size: $fs-xxs;
+            }
+            @media #{$break-m} {
                 font-size: $fs-xs;
             }
             @media #{$break-xxl} {
@@ -142,6 +145,9 @@ section {
             font-size: $fs-xxs;
         }
         @media #{$break-s} {
+            font-size: $fs-xxs;
+        }
+        @media #{$break-m} {
             font-size: $fs-xs;
         }
         @media #{$break-xxl} {
