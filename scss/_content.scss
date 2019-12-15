@@ -244,10 +244,15 @@ section {
     background-image: linear-gradient(to bottom, $color-lightgrey, $color-darkgrey);
     .contact-form {
         width: 100%;
-        padding: 10% 10% 2% 10%;
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
+        @media #{$break-xs} {
+            padding: 18% 10% 2% 10%;
+        }
+        @media #{$break-s} {
+            padding: 10% 10% 2% 10%;
+        }
         .label {
             display: block;
             margin: 0 1em;
@@ -255,7 +260,6 @@ section {
         }
         .input-text {
             padding: .5em;
-            margin-bottom: 2em;
             box-shadow : none;
             background: none;
             border-width: 0 6px 6px 6px;
@@ -264,6 +268,15 @@ section {
             border-radius: 1em;
             color: $color-marine;
             outline: 0;
+            @media #{$break-xs} {
+                margin-bottom: 1em;
+            }
+            @media #{$break-s} {
+                margin-bottom: 1em;
+            }
+            @media #{$break-m} {
+                margin-bottom: 2em;
+            }
             &:focus, 
             &:active {
                 border-color: $color-blue;
@@ -283,7 +296,7 @@ section {
             width: 100%;
         }
         #file {
-            width: 100%;
+            width: 80%;
         }
         .submit-wrap {
             width: 100%;

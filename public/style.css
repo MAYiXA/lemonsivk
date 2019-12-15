@@ -865,10 +865,19 @@ section .section-title {
 }
 #contact .contact-form {
   width: 100%;
-  padding: 10% 10% 2% 10%;
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
+}
+@media only screen and (max-width : 425px) {
+  #contact .contact-form {
+    padding: 18% 10% 2% 10%;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #contact .contact-form {
+    padding: 10% 10% 2% 10%;
+  }
 }
 #contact .contact-form .label {
   display: block;
@@ -877,7 +886,6 @@ section .section-title {
 }
 #contact .contact-form .input-text {
   padding: 0.5em;
-  margin-bottom: 2em;
   box-shadow: none;
   background: none;
   border-width: 0 6px 6px 6px;
@@ -886,6 +894,21 @@ section .section-title {
   border-radius: 1em;
   color: #002a4d;
   outline: 0;
+}
+@media only screen and (max-width : 425px) {
+  #contact .contact-form .input-text {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (min-width : 500px) {
+  #contact .contact-form .input-text {
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (min-width : 650px) {
+  #contact .contact-form .input-text {
+    margin-bottom: 2em;
+  }
 }
 #contact .contact-form .input-text:focus, #contact .contact-form .input-text:active {
   border-color: #00abdf;
@@ -904,7 +927,7 @@ section .section-title {
   width: 100%;
 }
 #contact .contact-form #file {
-  width: 100%;
+  width: 80%;
 }
 #contact .contact-form .submit-wrap {
   width: 100%;
