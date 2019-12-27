@@ -628,21 +628,26 @@ header .intro .intro-wrap .h1-1 .h1-2 {
 }
 header .intro .phone-us {
   z-index: 1;
-  position: absolute;
-  right: 0;
-  bottom: 0;
   background-color: #002a4d;
   border-radius: 0 0 0 5em;
   transition: all 0.4s ease;
 }
 @media only screen and (max-width : 425px) {
   header .intro .phone-us {
-    padding: 0.5em 1em 0.5em 4.5em;
+    width: 100%;
+    padding: 0.5em 35%;
+    position: relative;
+    right: 0;
+    top: 88%;
   }
 }
 @media only screen and (min-width : 426px) {
   header .intro .phone-us {
+    width: auto;
     padding: 0.5em 1em 0.5em 2em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 @media only screen and (min-width : 650px) {
@@ -758,7 +763,7 @@ section .section-title {
 }
 @media screen and (max-height: 500px) {
   #service .grid .service-info {
-    padding: 0.5em;
+    padding: 1em;
   }
 }
 
@@ -1087,7 +1092,7 @@ footer {
   justify-content: flex-end;
 }
 footer .author {
-  padding: 1em 4em 1em 3em;
+  padding: 1em 3em 1em 3em;
   margin: 0;
   text-align: right;
   background-color: #002a4d;

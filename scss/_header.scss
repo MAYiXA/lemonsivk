@@ -155,17 +155,22 @@ header {
         }
         .phone-us {
             z-index: 1;
-            position: absolute;
-            right: 0;
-            bottom: 0;
             background-color: $color-marine;
             border-radius: 0 0 0 5em;
             transition: all .4s ease;
             @media #{$break-xs} {
-                padding: .5em 1em .5em 4.2em;
+                width: 100%;
+                padding: .5em 35%;
+                position: relative;
+                right: 0;
+                top: 88%;
             }
             @media #{$break-s} {
+                width: auto;
                 padding: .5em 1em .5em 2em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
             }
             @media #{$break-m} {
                 padding: .5em 1em .5em 2em;
