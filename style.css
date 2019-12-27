@@ -676,7 +676,7 @@ section .section-title {
   left: 0;
   color: white;
   z-index: 99;
-  background-color: #303030;
+  background-color: rgba(48, 48, 48, 0.719);
   padding: 0.3em 0.3em 0.3em 5%;
   border-top-right-radius: 0.9em;
 }
