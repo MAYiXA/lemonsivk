@@ -1,3 +1,3 @@
 # lemonsivk.se
 
-sass --watch scss/style.scss:public/style.css
+sass --watch scss/style.scss:style.css
