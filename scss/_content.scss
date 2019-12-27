@@ -17,9 +17,6 @@ section {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    // @media screen and (max-height: 500px) {
-    //     align-items: baseline;
-    // }
     .grid {
         transition: .4s ease-in-out;
         @media #{$break-xs} {
@@ -31,9 +28,6 @@ section {
         @media #{$break-m} {
             max-width: 10em;
             margin: 3%;
-            // @media screen and (max-height: 500px) {
-            //     margin: 11% 3%;
-            // }
         }
         @media #{$break-l} {
             max-width: 12em;

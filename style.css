@@ -574,8 +574,10 @@ header .intro {
   background-position: center;
   border-radius: 0 5em;
   margin-bottom: 1.5em;
+  overflow: hidden;
 }
 header .intro .intro-wrap {
+  z-index: 2;
   position: absolute;
   top: 40%;
   margin-left: 1em;
@@ -624,44 +626,37 @@ header .intro .intro-wrap .h1-1 .h1-2 {
   top: 1em;
   left: 3.75em;
 }
-header .intro:before {
-  content: "";
+header .intro .phone-us {
+  z-index: 1;
   position: absolute;
-  bottom: 0;
   right: 0;
-  height: 5.5em;
+  bottom: 0;
   background-color: #002a4d;
   border-radius: 0 0 0 5em;
+  transition: all 0.4s ease;
 }
 @media only screen and (max-width : 425px) {
-  header .intro:before {
-    width: 100%;
+  header .intro .phone-us {
+    padding: 0.5em 1em 0.5em 4.5em;
   }
 }
 @media only screen and (min-width : 426px) {
-  header .intro:before {
-    width: 100%;
+  header .intro .phone-us {
+    padding: 0.5em 1em 0.5em 2em;
   }
 }
 @media only screen and (min-width : 650px) {
-  header .intro:before {
-    width: 25em;
+  header .intro .phone-us {
+    padding: 0.5em 1em 0.5em 2em;
   }
 }
-@media only screen and (min-width : 2560px) {
-  header .intro:before {
-    height: 9em;
-    width: 40em;
+@media only screen and (min-width : 1024px) {
+  header .intro .phone-us {
+    padding: 0.5em 2em 0.5em 3em;
   }
-}
-header .intro .phone-us {
-  position: absolute;
-  right: 1.5em;
-  bottom: 0.7em;
-  transition: all 0.4s ease;
-}
-header .intro .phone-us:hover {
-  transform: scale(1.1);
+  header .intro .phone-us:hover {
+    padding: 0.5em 4em 0.5em 3em;
+  }
 }
 header .intro .phone-us .top-phone {
   color: white;
