@@ -401,6 +401,11 @@ header .intro {
   width: 100%;
   height: 80vh;
 }
+@media screen and (max-height: 425px) {
+  header .intro {
+    height: 60vh;
+  }
+}
 
 a {
   text-decoration: none;
@@ -566,8 +571,8 @@ header .intro {
   margin-bottom: 1.5em;
 }
 header .intro .intro-wrap {
-  position: relative;
-  bottom: -50%;
+  position: absolute;
+  top: 40%;
   margin-left: 1em;
 }
 @media only screen and (max-width : 425px) {
@@ -589,6 +594,11 @@ header .intro .intro-wrap {
   header .intro .intro-wrap {
     padding: 2em;
     margin-left: 4em;
+  }
+}
+@media screen and (max-height: 425px) {
+  header .intro .intro-wrap {
+    top: 10%;
   }
 }
 header .intro .intro-wrap .h1-1 {
