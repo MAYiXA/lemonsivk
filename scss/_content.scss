@@ -25,6 +25,10 @@ section {
         @media #{$break-s} {
             width: 100%;
         }
+        @media #{$break-m} {
+            max-width: 10em;
+            margin: 3%;
+        }
         @media #{$break-l} {
             max-width: 12em;
             margin: 5%;
@@ -49,9 +53,9 @@ section {
                 margin: 0 12%;
             }
             @media #{$break-s} {
-                margin: 0 25%;
+                margin: 0 30%;
             }
-            @media #{$break-l} {
+            @media #{$break-m} {
                 margin: 0;
             }
         }

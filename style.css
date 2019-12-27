@@ -700,6 +700,12 @@ section .section-title {
     width: 100%;
   }
 }
+@media only screen and (min-width : 650px) {
+  #service .grid {
+    max-width: 10em;
+    margin: 3%;
+  }
+}
 @media only screen and (min-width : 1024px) {
   #service .grid {
     max-width: 12em;
@@ -732,10 +738,10 @@ section .section-title {
 }
 @media only screen and (min-width : 426px) {
   #service .grid .service-info {
-    margin: 0 25%;
+    margin: 0 30%;
   }
 }
-@media only screen and (min-width : 1024px) {
+@media only screen and (min-width : 650px) {
   #service .grid .service-info {
     margin: 0;
   }
