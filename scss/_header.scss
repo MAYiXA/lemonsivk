@@ -131,7 +131,7 @@ header {
                 margin-left: 4em;
             }
             @media screen and (max-height: 425px) {
-                top: 10%;
+                top: 30%;
             }
             .h1-1 {
                 z-index: 4;
@@ -159,21 +159,18 @@ header {
             background-color: $color-marine;
             border-radius: 0 0 0 5em;
             transition: all .4s ease;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: -webkit-fill-available;
             @media #{$break-xs} {
-                width: 100%;
-                padding: .5em 35%;
-                position: relative;
-                right: 0;
-                top: 88%;
+                padding: .5em 0 .5em 35%;
+            }
+            @media screen and (max-height: 425px) {
+                padding: .5em 0 .5em 35%;
             }
             @media #{$break-s} {
                 width: auto;
-                padding: .5em 1em .5em 2em;
-                position: absolute;
-                right: 0;
-                bottom: 0;
-            }
-            @media #{$break-m} {
                 padding: .5em 1em .5em 2em;
             }
             @media #{$break-l} {
