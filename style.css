@@ -1104,11 +1104,7 @@ footer .author .author-name {
   color: white;
   transition: all 0.4s ease;
 }
-footer .author .author-name:hover {
-  border-bottom: 1px dashed white;
-  padding-bottom: 0.4em;
-}
-footer .author .author-name:focus, footer .author .author-name:active {
+footer .author .author-name:hover, footer .author .author-name:focus, footer .author .author-name:active {
   color: #00abdf;
 }
 

@@ -14,10 +14,7 @@ footer {
         .author-name {
             color: white;
             transition: all .4s ease;
-            &:hover {
-                border-bottom: 1px dashed white;
-                padding-bottom: .4em;
-            }
+            &:hover,
             &:focus, 
             &:active {
                 color: $color-blue;
