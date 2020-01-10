@@ -78,6 +78,7 @@ section {
     background-image: url('welders.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
     background-position: left;
     filter: brightness(50%);
   }

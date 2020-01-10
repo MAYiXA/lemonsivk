@@ -116,16 +116,14 @@ header {
     margin-bottom: 1.5em;
     overflow: hidden;
     .intro-wrap {
-      position: relative;
-
       @media #{$break-xs} {
-        margin-left: 1em;
+        margin-left: 1.2em;
       }
       @media #{$break-s} {
-        margin-left: 1em;
+        margin-left: 1.3em;
       }
       @media #{$break-m} {
-        margin-left: 1em;
+        margin-left: 1.7em;
       }
       @media #{$break-l} {
         margin-left: 4em;
@@ -152,12 +150,12 @@ header {
       }
     }
     .phone-us {
-      background-color: $color-marine;
-      border-radius: 0 0 0 5em;
-      transition: all 0.4s ease;
       position: absolute;
       right: 0;
       bottom: 0;
+      background-color: $color-marine;
+      border-radius: 0 0 0 5em;
+      transition: all 0.4s ease;
       width: -webkit-fill-available;
       @media #{$break-xs} {
         padding: 0.5em 0 0.5em 35%;

@@ -590,22 +590,19 @@ header .intro {
   margin-bottom: 1.5em;
   overflow: hidden;
 }
-header .intro .intro-wrap {
-  position: relative;
-}
 @media only screen and (max-width : 425px) {
   header .intro .intro-wrap {
-    margin-left: 1em;
+    margin-left: 1.2em;
   }
 }
 @media only screen and (min-width : 426px) {
   header .intro .intro-wrap {
-    margin-left: 1em;
+    margin-left: 1.3em;
   }
 }
 @media only screen and (min-width : 650px) {
   header .intro .intro-wrap {
-    margin-left: 1em;
+    margin-left: 1.7em;
   }
 }
 @media only screen and (min-width : 1024px) {
@@ -634,12 +631,12 @@ header .intro .intro-wrap .h1-1 .h1-2 {
   left: 3.75em;
 }
 header .intro .phone-us {
-  background-color: #002a4d;
-  border-radius: 0 0 0 5em;
-  transition: all 0.4s ease;
   position: absolute;
   right: 0;
   bottom: 0;
+  background-color: #002a4d;
+  border-radius: 0 0 0 5em;
+  transition: all 0.4s ease;
   width: -webkit-fill-available;
 }
 @media only screen and (max-width : 425px) {
@@ -784,6 +781,7 @@ section .section-title {
   background-image: url("welders.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   background-position: left;
   filter: brightness(50%);
 }
