@@ -402,7 +402,6 @@ body {
 
 header {
   margin: 0 5% 0 5%;
-  height: 100%;
 }
 header .intro {
   width: 100%;
@@ -420,6 +419,19 @@ a {
 
 main {
   background-color: white;
+}
+main section {
+  position: relative;
+}
+main section .section-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 99;
+  background-color: rgba(48, 48, 48, 0.719);
+  padding: 0.3em 0.3em 0.3em 5%;
+  border-top-right-radius: 0.9em;
 }
 
 #service {
@@ -680,20 +692,6 @@ header .intro .phone-us .fa-phone {
   border: 1px solid white;
   padding: 0.3em;
   border-radius: 50%;
-}
-
-section {
-  position: relative;
-}
-section .section-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-  z-index: 99;
-  background-color: rgba(48, 48, 48, 0.719);
-  padding: 0.3em 0.3em 0.3em 5%;
-  border-top-right-radius: 0.9em;
 }
 
 #service {

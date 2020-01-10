@@ -1,0 +1,139 @@
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 1em;
+  background-image: linear-gradient(
+    to bottom,
+    $color-lightgrey,
+    $color-darkgrey
+  );
+  .contact-form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    @media #{$break-xs} {
+      padding: 18% 10% 2% 10%;
+    }
+    @media #{$break-s} {
+      padding: 15% 10% 2% 10%;
+    }
+    @media #{$break-m} {
+      padding: 10% 10% 2% 10%;
+    }
+    .label {
+      display: block;
+      margin: 0 1em;
+      color: white;
+    }
+    .input-text {
+      padding: 0.5em;
+      box-shadow: none;
+      background: none;
+      border-width: 0 6px 6px 6px;
+      border-style: solid;
+      border-color: white;
+      border-radius: 1em;
+      color: $color-marine;
+      outline: 0;
+      @media #{$break-xs} {
+        margin-bottom: 1em;
+      }
+      @media #{$break-s} {
+        margin-bottom: 1em;
+      }
+      @media #{$break-m} {
+        margin-bottom: 2em;
+      }
+      &:focus,
+      &:active {
+        border-color: $color-blue;
+      }
+    }
+    .input-wrap {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      .name-wrap,
+      .email-wrap {
+        margin-right: 1em;
+      }
+    }
+    #message {
+      overflow: auto;
+      resize: none;
+      width: 100%;
+    }
+    #file {
+      width: 80%;
+    }
+    .submit-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .submit-btn {
+        background-color: $color-marine;
+        border: none;
+        padding: 0.8em 3em;
+        border-radius: 0 1.5em;
+        color: white;
+        transition: all 0.4s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+        &:focus,
+        &:active {
+          color: $color-blue;
+        }
+      }
+    }
+  }
+  .google-phone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+    margin: 1em;
+    .call-us {
+      color: white;
+      padding-right: 0.5em;
+      margin: 0;
+      @media #{$break-xs} {
+        width: 100%;
+      }
+      @media #{$break-s} {
+        width: 100%;
+      }
+      @media #{$break-l} {
+        width: auto;
+      }
+    }
+    .bottom-phone {
+      color: white;
+      display: block;
+      margin: 0;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $color-marine;
+        background-color: white;
+        padding: 0 1em;
+        border-radius: 0 1.5em;
+      }
+      &:focus,
+      &:active {
+        color: $color-blue;
+      }
+    }
+    .fa-phone {
+      padding-left: 0.5em;
+      color: $color-blue;
+      display: block;
+      margin: 0 0.4em;
+      border: 1px solid white;
+      padding: 0.3em;
+      border-radius: 50%;
+    }
+  }
+}
