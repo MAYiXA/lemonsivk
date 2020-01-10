@@ -613,11 +613,6 @@ header .intro .intro-wrap {
     margin-left: 4em;
   }
 }
-@media screen and (max-height: 425px) {
-  header .intro .intro-wrap {
-    top: 30%;
-  }
-}
 header .intro .intro-wrap .h1-1 {
   position: relative;
   margin: 0;

@@ -130,9 +130,6 @@ header {
       @media #{$break-l} {
         margin-left: 4em;
       }
-      @media screen and (max-height: 425px) {
-        top: 30%;
-      }
       .h1-1 {
         position: relative;
         margin: 0;
