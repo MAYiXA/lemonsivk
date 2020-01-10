@@ -620,7 +620,6 @@ header .intro .intro-wrap {
   }
 }
 header .intro .intro-wrap .h1-1 {
-  z-index: 4;
   position: relative;
   margin: 0;
   padding: 0;
@@ -628,15 +627,16 @@ header .intro .intro-wrap .h1-1 {
   text-shadow: 1px 1px 20px black;
 }
 header .intro .intro-wrap .h1-1 .and-sign {
-  z-index: 3;
-  position: absolute;
-  top: -0.22em;
+  position: relative;
+  top: 0.3em;
+  left: -0.1em;
+  margin: 0;
+  padding: 0;
   color: #00abdf;
 }
 header .intro .intro-wrap .h1-1 .h1-2 {
-  z-index: 5;
   position: absolute;
-  top: 1em;
+  top: 2em;
   left: 3.75em;
 }
 header .intro .phone-us {
@@ -1011,7 +1011,8 @@ section .section-title {
   display: flex;
   flex-flow: row wrap;
 }
-#contact .contact-form .input-wrap .name-wrap, #contact .contact-form .input-wrap .email-wrap {
+#contact .contact-form .input-wrap .name-wrap,
+#contact .contact-form .input-wrap .email-wrap {
   margin-right: 1em;
 }
 #contact .contact-form #message {

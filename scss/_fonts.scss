@@ -8,7 +8,7 @@ $fw-medium: 600;
 $fw-bold: 700;
 
 // font-size
-$fs-xxs: .8em;
+$fs-xxs: 0.8em;
 $fs-xs: 1em;
 $fs-s: 1.5em;
 $fs-m: 2em;
@@ -19,279 +19,278 @@ $fs-xxl: 6.5em;
 $fs-xxxl: 8em;
 
 .menu-expanded {
-    font-family: $font-body;
-    font-weight: $fw-bold;
-    font-size: $fs-s;
+  font-family: $font-body;
+  font-weight: $fw-bold;
+  font-size: $fs-s;
 }
 
 header {
-    .nav-link {
-        font-family: $font-body;
-        font-weight: $fw-medium;
-        @media #{$break-l} {
-            font-size: $fs-xs;
-        }
-        @media #{$break-xl} {
-            font-size: $fs-s;
-        }
-        @media #{$break-xxl} {
-            font-size: $fs-m;
-        }
+  .nav-link {
+    font-family: $font-body;
+    font-weight: $fw-medium;
+    @media #{$break-l} {
+      font-size: $fs-xs;
     }
-    .toggle-bars {
-        font-size: $fs-m;
+    @media #{$break-xl} {
+      font-size: $fs-s;
     }
-    h1 {
-        font-family: $font-headings;
-        @media #{$break-xs} {
-            font-size: 1.7em;
-        }
-        @media #{$break-s} {
-            font-size: 2.4em;
-        }
-        @media #{$break-m} {
-            font-size: $fs-xm;
-        }
-        @media #{$break-xl} {
-            font-size: $fs-l;
-        }
-        @media #{$break-xxl} {
-            font-size: $fs-xxxl;
-        }
+    @media #{$break-xxl} {
+      font-size: $fs-m;
     }
-    .and-sign {
-        font-size: 200%;
-        font-style: italic;
+  }
+  .toggle-bars {
+    font-size: $fs-m;
+  }
+  h1 {
+    font-family: $font-headings;
+    @media #{$break-xs} {
+      font-size: 1.7em;
     }
-    .phone-us {
-        @media #{$break-xs} {
-            font-size: 1.3em;
-        }
-        @media #{$break-s} {
-            font-size: $fs-s;
-        }
-        @media #{$break-m} {
-            font-size: $fs-m;
-        }
-        @media #{$break-xxl} {
-            font-size: $fs-xm;
-        }
-        .top-phone {
-            font-family: $font-body;
-        }
+    @media #{$break-s} {
+      font-size: 2.4em;
     }
+    @media #{$break-m} {
+      font-size: $fs-xm;
+    }
+    @media #{$break-xl} {
+      font-size: $fs-l;
+    }
+    @media #{$break-xxl} {
+      font-size: $fs-xxxl;
+    }
+  }
+  .and-sign {
+    font-size: 200%;
+    font-style: italic;
+  }
+  .phone-us {
+    @media #{$break-xs} {
+      font-size: 1.3em;
+    }
+    @media #{$break-s} {
+      font-size: $fs-s;
+    }
+    @media #{$break-m} {
+      font-size: $fs-m;
+    }
+    @media #{$break-xxl} {
+      font-size: $fs-xm;
+    }
+    .top-phone {
+      font-family: $font-body;
+    }
+  }
 }
 
 section {
-    .section-title {
-        font-family: $font-headings;
-        font-weight: $fw-bold;
-        letter-spacing: .15em;
-        @media #{$break-xs} {
-            font-size: $fs-xs;
-        }
-        @media #{$break-s} {
-            font-size: $fs-xs;
-        }
-        @media #{$break-l} {
-            font-size: $fs-s;
-        }
-        @media #{$break-xxl} {
-            font-size: $fs-m;
-        }
+  .section-title {
+    font-family: $font-headings;
+    font-weight: $fw-bold;
+    letter-spacing: 0.15em;
+    @media #{$break-xs} {
+      font-size: $fs-xs;
     }
+    @media #{$break-s} {
+      font-size: $fs-xs;
+    }
+    @media #{$break-l} {
+      font-size: $fs-s;
+    }
+    @media #{$break-xxl} {
+      font-size: $fs-m;
+    }
+  }
 }
 
 #service {
-    .grid {
-        text-align: center;
-        i {
-            @media #{$break-xs} {
-                font-size: 2.5em;
-            }
-            @media #{$break-s} {
-                font-size: 3em;
-            }
-            @media #{$break-m} {
-                font-size: $fs-xm;
-            }
-            @media #{$break-l} {
-                font-size: $fs-l;
-            }
-        }
-        .service-info {
-            font-family: $font-body;
-            font-weight: $fw-medium;
-            @media #{$break-xs} {
-                font-size: $fs-xxs;
-            }
-            @media #{$break-s} {
-                font-size: $fs-xxs;
-            }
-            @media #{$break-m} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-xxl} {
-                font-size: $fs-s;
-            }
-        }
+  .grid {
+    text-align: center;
+    i {
+      @media #{$break-xs} {
+        font-size: 2.5em;
+      }
+      @media #{$break-s} {
+        font-size: 3em;
+      }
+      @media #{$break-m} {
+        font-size: $fs-xm;
+      }
+      @media #{$break-l} {
+        font-size: $fs-l;
+      }
     }
+    .service-info {
+      font-family: $font-body;
+      font-weight: $fw-medium;
+      @media #{$break-xs} {
+        font-size: $fs-xxs;
+      }
+      @media #{$break-s} {
+        font-size: $fs-xxs;
+      }
+      @media #{$break-m} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-xxl} {
+        font-size: $fs-s;
+      }
+    }
+  }
 }
 
 #jobs {
-    .job-text-wrap {
-        font-family: $font-body;
-        @media #{$break-xs} {
-            font-size: $fs-xxs;
-        }
-        @media #{$break-s} {
-            font-size: $fs-xxs;
-        }
-        @media #{$break-m} {
-            font-size: $fs-xs;
-        }
-        @media #{$break-xxl} {
-            font-size: $fs-s;
-        }
-        .job-info {
-            font-weight: $fw-bold;
-            @media #{$break-xs} {
-                font-size: $fs-s;
-            }
-            @media #{$break-s} {
-                font-size: $fs-s;
-            }
-            @media #{$break-xxl} {
-                font-size: $fs-m;
-            }
-        }
+  .job-text-wrap {
+    font-family: $font-body;
+    @media #{$break-xs} {
+      font-size: $fs-xxs;
     }
-    .contact-btn {
-        font-family: $font-body;
-        font-weight: $fw-bold;
-        @media #{$break-xs} {
-            font-size: $fs-xs;
-        }
-        @media #{$break-s} {
-            font-size: $fs-xs;
-        }
-        @media #{$break-m} {
-            font-size: $fs-s;
-        }
-        @media #{$break-xxl} {
-            font-size: $fs-m;
-        }
+    @media #{$break-s} {
+      font-size: $fs-xxs;
     }
-}
-
-#about {
-    .about-text {
-        font-family: $font-headings;
-        font-weight: $fw-medium;
-        @media #{$break-xs} {
-            font-size: $fs-s;
-        }
-        @media #{$break-s} {
-            font-size: $fs-m;
-        }
-        @media #{$break-l} {
-            font-size: $fs-xm;
-        }
-        @media #{$break-xxl} {
-            font-size: $fs-xl;
-        }
+    @media #{$break-m} {
+      font-size: $fs-xs;
     }
-}
-
-#contact {
-    .contact-form {
-        .label {
-            font-family: $font-body;
-            font-weight: $fw-bold;
-            @media #{$break-xs} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-s} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-m} {
-                font-size: $fs-s;
-            }
-        }
-        .input-text {
-            font-family: $font-body;
-            @media #{$break-xs} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-s} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-m} {
-                font-size: $fs-s;
-            }
-        }
-        .submit-btn {
-            font-family: $font-body;
-            font-weight: $fw-bold;
-            @media #{$break-xs} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-s} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-m} {
-                font-size: $fs-s;
-            }
-        }
+    @media #{$break-xxl} {
+      font-size: $fs-s;
     }
-    .google-phone {
-        font-family: $font-headings;
-        .call-us {
-            @media #{$break-xs} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-s} {
-                font-size: $fs-xs;
-            }
-            @media #{$break-m} {
-                font-size: $fs-s;
-            }
-            @media #{$break-l} {
-                font-size: $fs-m;
-            }
-            @media #{$break-xxl} {
-                font-size: $fs-xm;
-            }
-        }
-        .bottom-phone,
-        .fa-phone {
-            @media #{$break-xs} {
-                font-size: $fs-s;
-            }
-            @media #{$break-s} {
-                font-size: $fs-s;
-            }
-            @media #{$break-m} {
-                font-size: $fs-m;
-            }
-            @media #{$break-xxl} {
-                font-size: $fs-xm;
-            }
-        }
+    .job-info {
+      font-weight: $fw-bold;
+      @media #{$break-xs} {
+        font-size: $fs-s;
+      }
+      @media #{$break-s} {
+        font-size: $fs-s;
+      }
+      @media #{$break-xxl} {
+        font-size: $fs-m;
+      }
     }
-    
-}
-
-footer {
+  }
+  .contact-btn {
     font-family: $font-body;
     font-weight: $fw-bold;
     @media #{$break-xs} {
-        font-size: $fs-xxs;
+      font-size: $fs-xs;
     }
     @media #{$break-s} {
-        font-size: $fs-xxs;
+      font-size: $fs-xs;
     }
     @media #{$break-m} {
-        font-size: $fs-xs;
+      font-size: $fs-s;
     }
+    @media #{$break-xxl} {
+      font-size: $fs-m;
+    }
+  }
+}
+
+#about {
+  .about-text {
+    font-family: $font-headings;
+    font-weight: $fw-medium;
+    @media #{$break-xs} {
+      font-size: $fs-s;
+    }
+    @media #{$break-s} {
+      font-size: $fs-m;
+    }
+    @media #{$break-l} {
+      font-size: $fs-xm;
+    }
+    @media #{$break-xxl} {
+      font-size: $fs-xl;
+    }
+  }
+}
+
+#contact {
+  .contact-form {
+    .label {
+      font-family: $font-body;
+      font-weight: $fw-bold;
+      @media #{$break-xs} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-s} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-m} {
+        font-size: $fs-s;
+      }
+    }
+    .input-text {
+      font-family: $font-body;
+      @media #{$break-xs} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-s} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-m} {
+        font-size: $fs-s;
+      }
+    }
+    .submit-btn {
+      font-family: $font-body;
+      font-weight: $fw-bold;
+      @media #{$break-xs} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-s} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-m} {
+        font-size: $fs-s;
+      }
+    }
+  }
+  .google-phone {
+    font-family: $font-headings;
+    .call-us {
+      @media #{$break-xs} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-s} {
+        font-size: $fs-xs;
+      }
+      @media #{$break-m} {
+        font-size: $fs-s;
+      }
+      @media #{$break-l} {
+        font-size: $fs-m;
+      }
+      @media #{$break-xxl} {
+        font-size: $fs-xm;
+      }
+    }
+    .bottom-phone,
+    .fa-phone {
+      @media #{$break-xs} {
+        font-size: $fs-s;
+      }
+      @media #{$break-s} {
+        font-size: $fs-s;
+      }
+      @media #{$break-m} {
+        font-size: $fs-m;
+      }
+      @media #{$break-xxl} {
+        font-size: $fs-xm;
+      }
+    }
+  }
+}
+
+footer {
+  font-family: $font-body;
+  font-weight: $fw-bold;
+  @media #{$break-xs} {
+    font-size: $fs-xxs;
+  }
+  @media #{$break-s} {
+    font-size: $fs-xxs;
+  }
+  @media #{$break-m} {
+    font-size: $fs-xs;
+  }
 }
