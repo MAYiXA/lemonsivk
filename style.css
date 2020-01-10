@@ -547,7 +547,6 @@ header .nav-top ul .nav-item .nav-link {
 header .nav-top ul .nav-item .nav-link:hover {
   color: white;
   background-color: #002a4d;
-  padding: 0.5em 1.5em;
   border-radius: 0 1.5em;
 }
 header .nav-top ul .nav-item .nav-link:focus, header .nav-top ul .nav-item .nav-link:active {
@@ -579,6 +578,8 @@ header .nav-top ul .toggle-menu .toggle-bars {
   }
 }
 header .intro {
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: url("vatten.jpg");
   background-repeat: no-repeat;
@@ -589,28 +590,25 @@ header .intro {
   overflow: hidden;
 }
 header .intro .intro-wrap {
-  position: absolute;
-  top: 40%;
-  margin-left: 1em;
+  position: relative;
 }
 @media only screen and (max-width : 425px) {
   header .intro .intro-wrap {
-    padding: 0.5em;
+    margin-left: 1em;
   }
 }
 @media only screen and (min-width : 426px) {
   header .intro .intro-wrap {
-    padding: 0.5em;
+    margin-left: 1em;
   }
 }
 @media only screen and (min-width : 650px) {
   header .intro .intro-wrap {
-    padding: 1em;
+    margin-left: 1em;
   }
 }
 @media only screen and (min-width : 1024px) {
   header .intro .intro-wrap {
-    padding: 2em;
     margin-left: 4em;
   }
 }
@@ -640,7 +638,6 @@ header .intro .intro-wrap .h1-1 .h1-2 {
   left: 3.75em;
 }
 header .intro .phone-us {
-  z-index: 1;
   background-color: #002a4d;
   border-radius: 0 0 0 5em;
   transition: all 0.4s ease;

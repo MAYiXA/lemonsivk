@@ -74,7 +74,6 @@ header {
           &:hover {
             color: white;
             background-color: $color-marine;
-            padding: 0.5em 1.5em;
             border-radius: 0 1.5em;
           }
           &:focus,
@@ -105,6 +104,8 @@ header {
     }
   }
   .intro {
+    display: flex;
+    align-items: center;
     position: relative;
     background-image: url('vatten.jpg');
     background-repeat: no-repeat;
@@ -114,20 +115,18 @@ header {
     margin-bottom: 1.5em;
     overflow: hidden;
     .intro-wrap {
-      position: absolute;
-      top: 40%;
-      margin-left: 1em;
+      position: relative;
+
       @media #{$break-xs} {
-        padding: 0.5em;
+        margin-left: 1em;
       }
       @media #{$break-s} {
-        padding: 0.5em;
+        margin-left: 1em;
       }
       @media #{$break-m} {
-        padding: 1em;
+        margin-left: 1em;
       }
       @media #{$break-l} {
-        padding: 2em;
         margin-left: 4em;
       }
       @media screen and (max-height: 425px) {
@@ -155,7 +154,6 @@ header {
       }
     }
     .phone-us {
-      z-index: 1;
       background-color: $color-marine;
       border-radius: 0 0 0 5em;
       transition: all 0.4s ease;
