@@ -122,6 +122,9 @@ section {
       @media #{$break-l} {
         font-size: $fs-l;
       }
+      @media #{$break-xxl} {
+        font-size: $fs-xxl;
+      }
     }
     .service-info {
       font-family: $font-body;
@@ -182,9 +185,6 @@ section {
     @media #{$break-m} {
       font-size: $fs-s;
     }
-    @media #{$break-xxl} {
-      font-size: $fs-m;
-    }
   }
 }
 
@@ -202,7 +202,7 @@ section {
       font-size: $fs-xm;
     }
     @media #{$break-xxl} {
-      font-size: $fs-xl;
+      font-size: $fs-l;
     }
   }
 }
@@ -220,6 +220,9 @@ section {
       }
       @media #{$break-m} {
         font-size: $fs-s;
+      }
+      @media #{$break-xxl} {
+        font-size: $fs-m;
       }
     }
     .input-text {
@@ -245,6 +248,9 @@ section {
       }
       @media #{$break-m} {
         font-size: $fs-s;
+      }
+      @media #{$break-xxl} {
+        font-size: $fs-m;
       }
     }
   }
@@ -295,6 +301,12 @@ footer {
     font-size: $fs-xxs;
   }
   @media #{$break-m} {
+    font-size: $fs-xs;
+  }
+  @media #{$break-l} {
+    font-size: $fs-xxs;
+  }
+  @media #{$break-xl} {
     font-size: $fs-xs;
   }
 }

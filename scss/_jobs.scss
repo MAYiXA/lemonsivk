@@ -46,9 +46,20 @@
       color: white;
       background-color: $color-marine;
       border-bottom-left-radius: 2em;
-      padding: 0.7em 6em 0.7em 2em;
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
+      @media #{$break-xs} {
+        padding: 0.7em 6em 0.7em 2em;
+      }
+      @media #{$break-s} {
+        padding: 0.7em 6em 0.7em 2em;
+      }
+      @media #{$break-m} {
+        padding: 0.7em 6em 0.7em 2em;
+      }
+      @media #{$break-l} {
+        padding: 0.7em 8em 0.7em 2.5em;
+      }
       .fa-angle-double-right {
         padding-right: 0.5em;
         -webkit-transition: all 0.4s ease;
