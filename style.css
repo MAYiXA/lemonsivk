@@ -747,6 +747,7 @@ header .intro .phone-us .fa-phone {
 #service .grid {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+  max-height: 12em;
 }
 @media only screen and (max-width : 425px) {
   #service .grid {
@@ -794,7 +795,7 @@ header .intro .phone-us .fa-phone {
 }
 @media only screen and (max-width : 425px) {
   #service .grid .service-info {
-    margin: 0 12%;
+    margin: 0 17%;
   }
 }
 @media only screen and (min-width : 426px) {

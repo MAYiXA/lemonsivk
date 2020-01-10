@@ -15,6 +15,7 @@
   .grid {
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
+    max-height: 12em;
     @media #{$break-xs} {
       width: 100%;
       width: -webkit-fill-available;
@@ -49,7 +50,7 @@
     .service-info {
       padding-top: 1em;
       @media #{$break-xs} {
-        margin: 0 12%;
+        margin: 0 17%;
       }
       @media #{$break-s} {
         margin: 0 30%;
