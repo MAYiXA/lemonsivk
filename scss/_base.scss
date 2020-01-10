@@ -63,11 +63,13 @@ main {
 }
 
 #jobs {
+  padding: 0;
+  margin: 0;
   width: 100%;
   width: -webkit-fill-available;
   height: 98vh;
   @media screen and (max-height: 540px) {
-    height: 35em;
+    height: 45em;
   }
 }
 
