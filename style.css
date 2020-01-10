@@ -923,8 +923,8 @@ header .intro .phone-us .fa-phone {
   width: 80%;
   height: auto;
   border: 10px double #00abdf;
-  border-radius: 0 3em;
-  -webkit-border-radius: 0 3em;
+  border-radius: 0 3em 0 3em;
+  -webkit-border-radius: 0 3em 0 3em;
 }
 #about .about-text-wrap .about-text {
   padding: 0 1em;
