@@ -15,12 +15,9 @@
   .about-text-wrap {
     background-color: $color-lightgrey;
     width: 80%;
+    height: auto;
     border: 10px double $color-blue;
     border-radius: 0 3em;
-    -webkit-border-radius: 0 3em;
-    -moz-border-radius: 0 3em;
-    -ms-border-radius: 0 3em;
-    -o-border-radius: 0 3em;
     .about-text {
       padding: 0 1em;
       color: $color-marine;

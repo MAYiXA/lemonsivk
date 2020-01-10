@@ -18,6 +18,10 @@ $fs-xl: 6em;
 $fs-xxl: 6.5em;
 $fs-xxxl: 8em;
 
+html {
+  font-display: swap;
+}
+
 .menu-expanded {
   font-family: $font-body;
   font-weight: $fw-bold;

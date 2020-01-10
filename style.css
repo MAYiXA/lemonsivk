@@ -1,3 +1,7 @@
+html {
+  font-display: swap;
+}
+
 .menu-expanded {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -917,12 +921,9 @@ header .intro .phone-us .fa-phone {
 #about .about-text-wrap {
   background-color: rgba(128, 128, 128, 0.219);
   width: 80%;
+  height: auto;
   border: 10px double #00abdf;
   border-radius: 0 3em;
-  -webkit-border-radius: 0 3em;
-  -moz-border-radius: 0 3em;
-  -ms-border-radius: 0 3em;
-  -o-border-radius: 0 3em;
 }
 #about .about-text-wrap .about-text {
   padding: 0 1em;
