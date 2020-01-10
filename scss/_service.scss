@@ -1,15 +1,27 @@
 #service {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   .grid {
+    -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     @media #{$break-xs} {
       width: 100%;
+      width: -webkit-fill-available;
     }
     @media #{$break-s} {
       width: 100%;
+      width: -webkit-fill-available;
     }
     @media #{$break-m} {
       max-width: 10em;
@@ -24,6 +36,7 @@
     }
     &:hover {
       @media #{$break-l} {
+        -webkit-transform: scale(1.4);
         transform: scale(1.4);
       }
     }

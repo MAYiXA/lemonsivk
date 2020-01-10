@@ -4,12 +4,22 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.952);
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   display: none;
   ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     list-style-type: none;
     margin: 7em 10%;
@@ -18,6 +28,7 @@
       padding: 1em;
       .expand-link {
         color: white;
+        -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
         &:hover,
         &:active,
@@ -32,9 +43,18 @@
 header {
   .nav-top {
     ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       list-style-type: none;
       margin: 0;
@@ -69,6 +89,7 @@ header {
         }
         .nav-link {
           color: $color-darkgrey;
+          -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
           padding: 0.5em 1em;
           &:hover {
@@ -104,12 +125,17 @@ header {
     }
   }
   .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     background-image: url('vatten.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    -o-object-fit: cover;
     object-fit: cover;
     background-position: center;
     border-radius: 0 5em;
@@ -155,8 +181,10 @@ header {
       bottom: 0;
       background-color: $color-marine;
       border-radius: 0 0 0 5em;
+      -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
       width: -webkit-fill-available;
+      width: -moz-available;
       @media #{$break-xs} {
         padding: 0.5em 0 0.5em 35%;
       }
@@ -175,6 +203,7 @@ header {
       }
       .top-phone {
         color: white;
+        -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
         &:hover {
           padding-bottom: 0.18em;

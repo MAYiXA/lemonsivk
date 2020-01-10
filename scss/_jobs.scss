@@ -1,9 +1,20 @@
 #jobs {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   overflow: hidden;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($color-blue),
+    to($color-marine)
+  );
   background-image: linear-gradient(to right, $color-blue, $color-marine);
   .job-img {
     width: 100%;
@@ -11,11 +22,14 @@
     background-image: url('welders.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    -o-object-fit: cover;
     object-fit: cover;
     background-position: left;
+    -webkit-filter: brightness(50%);
     filter: brightness(50%);
   }
   .job-text-wrap {
+    -ms-flex-item-align: center;
     align-self: center;
     position: relative;
     color: white;
@@ -36,14 +50,17 @@
     background-color: $color-marine;
     border-bottom-left-radius: 2em;
     padding: 0.7em 18% 0.7em 7%;
+    -webkit-transition: color 0.4s ease;
     transition: color 0.4s ease;
     .fa-angle-double-right {
       padding-right: 0.5em;
+      -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
     }
     &:hover {
       color: $color-blue;
       .fa-angle-double-right {
+        -webkit-transform: translateX(0.5em);
         transform: translateX(0.5em);
         color: white;
       }

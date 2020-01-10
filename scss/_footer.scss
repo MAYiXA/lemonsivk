@@ -2,7 +2,11 @@ footer {
   background-color: $color-darkgrey;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   .author {
     padding: 1em 3em 1em 3em;
@@ -13,6 +17,7 @@ footer {
     color: white;
     .author-name {
       color: white;
+      -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
       &:hover,
       &:focus,

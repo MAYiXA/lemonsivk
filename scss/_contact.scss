@@ -1,8 +1,22 @@
 #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-bottom: 1em;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($color-lightgrey),
+    to($color-darkgrey)
+  );
   background-image: linear-gradient(
     to bottom,
     $color-lightgrey,
@@ -10,8 +24,15 @@
   );
   .contact-form {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     @media #{$break-xs} {
       padding: 18% 10% 2% 10%;
@@ -29,6 +50,7 @@
     }
     .input-text {
       padding: 0.5em;
+      -webkit-box-shadow: none;
       box-shadow: none;
       background: none;
       border-width: 0 6px 6px 6px;
@@ -53,7 +75,12 @@
     }
     .input-wrap {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
       flex-flow: row wrap;
       .name-wrap,
       .email-wrap {
@@ -70,7 +97,11 @@
     }
     .submit-wrap {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       .submit-btn {
         background-color: $color-marine;
@@ -78,8 +109,10 @@
         padding: 0.8em 3em;
         border-radius: 0 1.5em;
         color: white;
+        -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
         &:hover {
+          -webkit-transform: scale(1.2);
           transform: scale(1.2);
         }
         &:focus,
@@ -91,9 +124,16 @@
   }
   .google-phone {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin: 1em;
     .call-us {
@@ -114,6 +154,7 @@
       color: white;
       display: block;
       margin: 0;
+      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
       &:hover {
         color: $color-marine;

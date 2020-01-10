@@ -11,6 +11,7 @@ html {
 body {
   margin: 0;
   width: 100%;
+  width: -webkit-fill-available;
   background-color: white;
   position: relative;
 }
@@ -23,6 +24,7 @@ header {
   margin: 0 5% 0 5%;
   .intro {
     width: 100%;
+    width: -webkit-fill-available;
     height: 80vh;
     @media screen and (max-height: 425px) {
       height: 15em;
@@ -46,13 +48,14 @@ main {
       z-index: 99;
       background-color: rgba(48, 48, 48, 0.719);
       padding: 0.3em 0.3em 0.3em 5%;
-      border-top-right-radius: 0.9em;
+      border-radius: 0 0.9em 0 0;
     }
   }
 }
 
 #service {
   width: 100%;
+  width: -webkit-fill-available;
   height: 95vh;
   @media screen and (max-height: 500px) {
     height: 35em;
@@ -61,6 +64,7 @@ main {
 
 #jobs {
   width: 100%;
+  width: -webkit-fill-available;
   height: 98vh;
   @media screen and (max-height: 540px) {
     height: 35em;
@@ -69,11 +73,13 @@ main {
 
 #about {
   width: 100%;
+  width: -webkit-fill-available;
   height: 95vh;
 }
 
 #contact {
   width: 100%;
+  width: -webkit-fill-available;
   height: 80%;
 }
 

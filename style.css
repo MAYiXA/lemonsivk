@@ -391,6 +391,7 @@ html {
 body {
   margin: 0;
   width: 100%;
+  width: -webkit-fill-available;
   background-color: white;
   position: relative;
 }
@@ -405,6 +406,7 @@ header {
 }
 header .intro {
   width: 100%;
+  width: -webkit-fill-available;
   height: 80vh;
 }
 @media screen and (max-height: 425px) {
@@ -431,11 +433,12 @@ main section .section-title {
   z-index: 99;
   background-color: rgba(48, 48, 48, 0.719);
   padding: 0.3em 0.3em 0.3em 5%;
-  border-top-right-radius: 0.9em;
+  border-radius: 0 0.9em 0 0;
 }
 
 #service {
   width: 100%;
+  width: -webkit-fill-available;
   height: 95vh;
 }
 @media screen and (max-height: 500px) {
@@ -446,6 +449,7 @@ main section .section-title {
 
 #jobs {
   width: 100%;
+  width: -webkit-fill-available;
   height: 98vh;
 }
 @media screen and (max-height: 540px) {
@@ -456,11 +460,13 @@ main section .section-title {
 
 #about {
   width: 100%;
+  width: -webkit-fill-available;
   height: 95vh;
 }
 
 #contact {
   width: 100%;
+  width: -webkit-fill-available;
   height: 80%;
 }
 
@@ -474,13 +480,23 @@ footer {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.952);
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   display: none;
 }
 .menu-expanded ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   list-style-type: none;
   margin: 7em 10%;
@@ -491,6 +507,7 @@ footer {
 }
 .menu-expanded ul li .expand-link {
   color: white;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 .menu-expanded ul li .expand-link:hover, .menu-expanded ul li .expand-link:active, .menu-expanded ul li .expand-link:focus {
@@ -498,9 +515,18 @@ footer {
 }
 
 header .nav-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   list-style-type: none;
   margin: 0;
@@ -553,6 +579,7 @@ header .nav-top ul .nav-item {
 }
 header .nav-top ul .nav-item .nav-link {
   color: #303030;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   padding: 0.5em 1em;
 }
@@ -590,12 +617,17 @@ header .nav-top ul .toggle-menu .toggle-bars {
   }
 }
 header .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-image: url("vatten.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -o-object-fit: cover;
   object-fit: cover;
   background-position: center;
   border-radius: 0 5em;
@@ -648,8 +680,10 @@ header .intro .phone-us {
   bottom: 0;
   background-color: #002a4d;
   border-radius: 0 0 0 5em;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   width: -webkit-fill-available;
+  width: -moz-available;
 }
 @media only screen and (max-width : 425px) {
   header .intro .phone-us {
@@ -677,6 +711,7 @@ header .intro .phone-us {
 }
 header .intro .phone-us .top-phone {
   color: white;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 header .intro .phone-us .top-phone:hover {
@@ -695,22 +730,34 @@ header .intro .phone-us .fa-phone {
 }
 
 #service {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 #service .grid {
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 @media only screen and (max-width : 425px) {
   #service .grid {
     width: 100%;
+    width: -webkit-fill-available;
   }
 }
 @media only screen and (min-width : 426px) {
   #service .grid {
     width: 100%;
+    width: -webkit-fill-available;
   }
 }
 @media only screen and (min-width : 650px) {
@@ -732,6 +779,7 @@ header .intro .phone-us .fa-phone {
 }
 @media only screen and (min-width : 1024px) {
   #service .grid:hover {
+    -webkit-transform: scale(1.4);
     transform: scale(1.4);
   }
 }
@@ -768,9 +816,14 @@ header .intro .phone-us .fa-phone {
 #jobs {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00abdf), to(#002a4d));
   background-image: linear-gradient(to right, #00abdf, #002a4d);
 }
 #jobs .job-img {
@@ -779,11 +832,14 @@ header .intro .phone-us .fa-phone {
   background-image: url("welders.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  -o-object-fit: cover;
   object-fit: cover;
   background-position: left;
+  -webkit-filter: brightness(50%);
   filter: brightness(50%);
 }
 #jobs .job-text-wrap {
+  -ms-flex-item-align: center;
   align-self: center;
   position: relative;
   color: white;
@@ -802,16 +858,19 @@ header .intro .phone-us .fa-phone {
   background-color: #002a4d;
   border-bottom-left-radius: 2em;
   padding: 0.7em 18% 0.7em 7%;
+  -webkit-transition: color 0.4s ease;
   transition: color 0.4s ease;
 }
 #jobs .contact-btn .fa-angle-double-right {
   padding-right: 0.5em;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 #jobs .contact-btn:hover {
   color: #00abdf;
 }
 #jobs .contact-btn:hover .fa-angle-double-right {
+  -webkit-transform: translateX(0.5em);
   transform: translateX(0.5em);
   color: white;
 }
@@ -819,16 +878,27 @@ header .intro .phone-us .fa-phone {
 #about {
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 4em 0;
 }
 #about .about-text-wrap {
   background-color: rgba(128, 128, 128, 0.219);
   width: 80%;
-  border-radius: 0 3em;
   border: 10px double #00abdf;
+  border-radius: 0 3em;
+  -webkit-border-radius: 0 3em;
+  -moz-border-radius: 0 3em;
+  -ms-border-radius: 0 3em;
+  -o-border-radius: 0 3em;
 }
 #about .about-text-wrap .about-text {
   padding: 0 1em;
@@ -849,101 +919,176 @@ header .intro .phone-us .fa-phone {
 }
 #about .circles li {
   position: absolute;
+  bottom: -200px;
   display: block;
   list-style: none;
   background: rgba(0, 162, 255, 0.39);
   animation: animate 25s linear infinite;
-  bottom: -200px;
+  -webkit-animation: animate 25s linear infinite;
 }
 #about .circles li:nth-child(1) {
   left: 25%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 #about .circles li:nth-child(2) {
   left: 10%;
   width: 20px;
   height: 20px;
   animation-delay: 2s;
+  -webkit-animation-delay: 2s;
   animation-duration: 12s;
+  -webkit-animation-duration: 12s;
 }
 #about .circles li:nth-child(3) {
   left: 70%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
+  -webkit-animation-delay: 4s;
 }
 #about .circles li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
   animation-delay: 0s;
+  -webkit-animation-delay: 0s;
   animation-duration: 18s;
+  -webkit-animation-duration: 18s;
 }
 #about .circles li:nth-child(5) {
   left: 65%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 #about .circles li:nth-child(6) {
   left: 75%;
   width: 100px;
   height: 100px;
   animation-delay: 3s;
+  -webkit-animation-delay: 3s;
 }
 #about .circles li:nth-child(7) {
   left: 35%;
   width: 110px;
   height: 110px;
   animation-delay: 7s;
+  -webkit-animation-delay: 7s;
 }
 #about .circles li:nth-child(8) {
   left: 50%;
   width: 25px;
   height: 25px;
   animation-delay: 15s;
+  -webkit-animation-delay: 15s;
   animation-duration: 45s;
+  -webkit-animation-duration: 45s;
 }
 #about .circles li:nth-child(9) {
   left: 20%;
   width: 15px;
   height: 15px;
   animation-delay: 2s;
+  -webkit-animation-delay: 2s;
   animation-duration: 35s;
+  -webkit-animation-duration: 35s;
 }
 #about .circles li:nth-child(10) {
   left: 85%;
   width: 100px;
   height: 100px;
   animation-delay: 0s;
+  -webkit-animation-delay: 0s;
   animation-duration: 11s;
+  -webkit-animation-duration: 11s;
+}
+@-webkit-keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+    -webkit-transform: translateY(0) rotate(0deg);
+    -moz-transform: translateY(0) rotate(0deg);
+    -ms-transform: translateY(0) rotate(0deg);
+    -o-transform: translateY(0) rotate(0deg);
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1000px) rotate(720deg);
+    -webkit-transform: translateY(-1000px) rotate(720deg);
+    -moz-transform: translateY(-1000px) rotate(720deg);
+    -ms-transform: translateY(-1000px) rotate(720deg);
+    -o-transform: translateY(-1000px) rotate(720deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
 }
 @keyframes animate {
   0% {
-    transform: translateY(0) rotate(0deg);
     opacity: 1;
+    transform: translateY(0) rotate(0deg);
+    -webkit-transform: translateY(0) rotate(0deg);
+    -moz-transform: translateY(0) rotate(0deg);
+    -ms-transform: translateY(0) rotate(0deg);
+    -o-transform: translateY(0) rotate(0deg);
     border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
   }
   100% {
-    transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
+    transform: translateY(-1000px) rotate(720deg);
+    -webkit-transform: translateY(-1000px) rotate(720deg);
+    -moz-transform: translateY(-1000px) rotate(720deg);
+    -ms-transform: translateY(-1000px) rotate(720deg);
+    -o-transform: translateY(-1000px) rotate(720deg);
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
   }
 }
 
 #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-bottom: 1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.219)), to(#303030));
   background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.219), #303030);
 }
 #contact .contact-form {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 @media only screen and (max-width : 425px) {
@@ -968,6 +1113,7 @@ header .intro .phone-us .fa-phone {
 }
 #contact .contact-form .input-text {
   padding: 0.5em;
+  -webkit-box-shadow: none;
   box-shadow: none;
   background: none;
   border-width: 0 6px 6px 6px;
@@ -997,7 +1143,12 @@ header .intro .phone-us .fa-phone {
 }
 #contact .contact-form .input-wrap {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 #contact .contact-form .input-wrap .name-wrap,
@@ -1014,7 +1165,11 @@ header .intro .phone-us .fa-phone {
 }
 #contact .contact-form .submit-wrap {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 #contact .contact-form .submit-wrap .submit-btn {
@@ -1023,9 +1178,11 @@ header .intro .phone-us .fa-phone {
   padding: 0.8em 3em;
   border-radius: 0 1.5em;
   color: white;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 #contact .contact-form .submit-wrap .submit-btn:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 #contact .contact-form .submit-wrap .submit-btn:focus, #contact .contact-form .submit-wrap .submit-btn:active {
@@ -1033,9 +1190,16 @@ header .intro .phone-us .fa-phone {
 }
 #contact .google-phone {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   margin: 1em;
 }
@@ -1063,6 +1227,7 @@ header .intro .phone-us .fa-phone {
   color: white;
   display: block;
   margin: 0;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 #contact .google-phone .bottom-phone:hover {
@@ -1088,7 +1253,11 @@ footer {
   background-color: #303030;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 footer .author {
@@ -1101,6 +1270,7 @@ footer .author {
 }
 footer .author .author-name {
   color: white;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 footer .author .author-name:hover, footer .author .author-name:focus, footer .author .author-name:active {
