@@ -584,6 +584,7 @@ header .intro {
   background-image: url("vatten.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   background-position: center;
   border-radius: 0 5em;
   margin-bottom: 1.5em;
